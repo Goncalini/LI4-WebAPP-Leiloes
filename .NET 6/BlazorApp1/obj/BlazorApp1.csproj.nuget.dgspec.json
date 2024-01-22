@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\BlazorApp1.csproj": {}
+    "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\BlazorApp1.csproj": {
+    "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\BlazorApp1.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\BlazorApp1.csproj",
-        "packagesPath": "C:\\Users\\gonca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\obj\\",
+        "projectPath": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gonca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\DataLayer\\DataLayer.csproj"
+              "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -66,17 +70,21 @@
         }
       }
     },
-    "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\gonca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\DataLayer\\obj\\",
+        "projectPath": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gonca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
