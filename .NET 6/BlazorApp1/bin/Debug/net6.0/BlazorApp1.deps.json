@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "BlazorApp1/1.0.0": {
         "dependencies": {
-          "DataLayer": "1.0.0"
+          "DataLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.26"
         },
         "runtime": {
           "BlazorApp1.dll": {}
@@ -19,6 +20,14 @@
           "lib/net5.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.1.28.55233"
+          }
+        }
+      },
+      "Humanizer.Core/2.8.26": {
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.26.1919"
           }
         }
       },
@@ -107,6 +116,18 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.26": {},
+      "Microsoft.EntityFrameworkCore.Design/6.0.26": {
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.26"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "6.0.26.0",
+            "fileVersion": "6.0.2623.57013"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.26": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.26",
@@ -129,6 +150,11 @@
             "assemblyVersion": "6.0.26.0",
             "fileVersion": "6.0.2623.57013"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/6.0.26": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "6.0.26"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -539,6 +565,13 @@
       "path": "dapper/2.1.28",
       "hashPath": "dapper.2.1.28.nupkg.sha512"
     },
+    "Humanizer.Core/2.8.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
+      "path": "humanizer.core/2.8.26",
+      "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -581,6 +614,13 @@
       "path": "microsoft.entityframeworkcore.analyzers/6.0.26",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.26.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Design/6.0.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SKcdA+0RtsfgbmafYNK5ej0Hm46IBlZrfnkn4RXPDwqWRkEV+tdO3FifZJlFnUgB3cG4feWd8TYZNPpT9ReCVg==",
+      "path": "microsoft.entityframeworkcore.design/6.0.26",
+      "hashPath": "microsoft.entityframeworkcore.design.6.0.26.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.26": {
       "type": "package",
       "serviceable": true,
@@ -594,6 +634,13 @@
       "sha512": "sha512-e8B4Bc6+0pZzoyNZSQCyi6ZX3IkcsDRGS9CpKlUUAKqwBIVDTBaURnwjI7hYwA/y+2Rmnfk4ZiA1/z8OS2xf3Q==",
       "path": "microsoft.entityframeworkcore.sqlserver/6.0.26",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.6.0.26.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/6.0.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QsdYf5pYszTFKxyfgL8+PsXx2vhTXpl3kPRcunnkJ7TQ8u6WH1OFSFHXCvvZgmH65it6jKv/pY9Jgl+r+vRYnw==",
+      "path": "microsoft.entityframeworkcore.tools/6.0.26",
+      "hashPath": "microsoft.entityframeworkcore.tools.6.0.26.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
       "type": "package",

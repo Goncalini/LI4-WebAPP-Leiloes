@@ -8,11 +8,13 @@ namespace DataLayer.Models
 {
     public class Classificacao
     {
-        public List<int>? classificacoes { get; set; }
+        public int avaliacaoId { get; set; }
 
-        public int quantidade { get; set; }
+        public int usernameCliente { get; set; }
 
-        public double media { get; set; }
+        public int usernameUser { get; set; }
+
+        public int aval { get; set; }
 
         public string comentario { get; set; }
     }

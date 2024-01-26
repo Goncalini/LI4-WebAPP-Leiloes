@@ -1,11 +1,16 @@
 ﻿using DataLayer.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace BlazorApp1.Models
 {
     public class Utilizador
     {
-        public string username { get; set; }
-        public string nome { get; set; }
+        public string usernameId { get; set; }
+        
+        public string primeiroNome { get; set; }
+
+        public string segundoNome { get; set; }
+
         public string email { get; set; }
         public string password { get; set; }
         public string contacto { get; set; }

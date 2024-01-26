@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataLayer.Models
 {
@@ -13,9 +14,11 @@ namespace DataLayer.Models
 
         public double preco_inicial {  get; set; }
 
-        public TimeOnly tempo_limite { get; set; }
+        public DateTime tempo_limite { get; set; }
 
         public string tipo {  get; set; }
+
+        public string descricao { get; set; }
 
         public int maior_licit {  get; set; }
 

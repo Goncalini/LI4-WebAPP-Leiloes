@@ -11,10 +11,16 @@ namespace DataLayer.Models
     {
         public int numero {  get; set; }
 
+        public string userUsername { get; set; }
+
+        public int iDLeilao { get; set; }
+
         public double valor { get; set; }
 
-        public TimeOnly tempo { get; set; } 
+        public TimeSpan tempo { get; set; } 
 
-        public Utilizador cliente {  get; set; } 
+        public Utilizador cliente {  get; set; }
+
+        public Leilao leilao { get; set; }
     }
 }

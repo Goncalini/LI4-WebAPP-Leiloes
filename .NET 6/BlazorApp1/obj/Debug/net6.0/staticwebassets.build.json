@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7Jlh65nsowgMbmwhHDZEZ193kX7gD2HDJ7sK22cJyGo=",
+  "Hash": "F+edGBWu0QZ8PTguCWZUnHj0xWm/va8ytRi5NKRG7WY=",
   "Source": "BlazorApp1",
   "BasePath": "_content/BlazorApp1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazorApp1\\wwwroot",
       "Source": "BlazorApp1",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorApp1.styles.css",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorApp1.styles.css",
       "SourceId": "BlazorApp1",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "BlazorApp1.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorApp1.styles.css"
+      "OriginalItemSpec": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorApp1.styles.css"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
       "SourceId": "BlazorApp1",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "BlazorApp1.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\logo.png",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\logo.png",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "assets/images/logo.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,29 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
-      "BasePath": "_content/BlazorApp1",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
-    },
-    {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
-      "SourceId": "BlazorApp1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -150,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -169,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -188,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -207,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -226,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -245,10 +226,29 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\site.css",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\favicon.ico",
       "SourceId": "BlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\.NET 6\\BlazorApp1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\",
       "BasePath": "_content/BlazorApp1",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
