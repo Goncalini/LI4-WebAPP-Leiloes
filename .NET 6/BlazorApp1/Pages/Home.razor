@@ -2,11 +2,33 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1 class="font-extrabold text-5xl">Olá, world!</h1>
+<div class="min-h-screen xl:bg-gray-200">
+    <div class="grid grid-cols-3 grid-rows-2 gap-1 place-items-center">
 
-<button class="p-4">im a buton</button>
+        <div class="row-span-2">
+            <img class="m-20 w-96 h-99" src="assets/images/logo.png" />
+        </div>
 
-Welcome to your new app.
+
+        <div class="col-span-2">
+            <h1 class="pt-20 font-extrabold text-8xl">Welcome!</h1>
+        </div>
+
+        <div class="flex-col space-y-2">
+            <h3 class="pt-5 font-extrabold text-center text-4xl">New here?</h3>
+
+            <a href="/register" class="text-white text-4xl font-extrabold px-[96px] py-3 bg-red-500 rounded-3xl shadow border border-black justify-center items-center inline-flex hover:bg-red-400">Register</a>
+
+        </div>
+
+        <div class="flex-col space-y-2">
+            <h3 class="font-extrabold text-center text-4xl">Already have an</h3>
+            <h3 class="font-extrabold text-center text-4xl">account?</h3>
+            <a href="/Login" class="text-white text-4xl font-extrabold px-[105px] py-3 bg-red-500 rounded-3xl shadow border border-black justify-center items-center inline-flex hover:bg-red-400">Sign-in</a>
+        </div>
+
+    </div>
+</div>
 
 @code{
 
