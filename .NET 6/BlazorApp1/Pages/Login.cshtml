@@ -1,0 +1,43 @@
+﻿@page
+@model BlazorApp1.Pages.LoginModel
+
+@using Microsoft.AspNetCore.Components.Web
+@namespace BlazorApp1.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/Login.css" rel="stylesheet" />
+    <title>Login</title>
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+</head>
+<body>
+
+    <div class ="wrapper">
+        <form action="">
+            <h1>Sign-in</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username or Email" 
+                required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" 
+                required>
+            </div>
+
+            <button type="submit" class="btn">Continue</button>
+        </form>
+    </div>
+    <script src="_framework/blazor.server.js"></script>
+</body>
+
+</html>
+
+
+@code{
+}

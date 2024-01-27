@@ -11,11 +11,12 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 
+/*
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer("Data Source=GONCALINI;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
 });
-
+*/
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
