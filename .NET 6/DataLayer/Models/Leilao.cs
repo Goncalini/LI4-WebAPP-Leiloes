@@ -16,11 +16,11 @@ namespace DataLayer.Models
 
         public DateTime tempo_limite { get; set; }
 
-        public string tipo {  get; set; }
+        public string tipo { get; set; }
 
-        public string descricao { get; set; }
+        public int maior_licit { get; set; } 
 
-        public int maior_licit {  get; set; }
+        public DateTime dataDeTermino { get; set; }
 
         public Utilizador vendedor {  get; set; } 
 

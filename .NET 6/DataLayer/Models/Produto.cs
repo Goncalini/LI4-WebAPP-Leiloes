@@ -11,8 +11,6 @@ namespace DataLayer.Models
         public Categoria categoria_produto { get; set; }
         
         public string nome { get; set; }
-    
-        //public List<Foto> fotos { get; set; }
 
         public string marca { get; set;}
 

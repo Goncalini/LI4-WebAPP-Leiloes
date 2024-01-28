@@ -16,9 +16,9 @@ namespace BlazorApp1.Models
         public string contacto { get; set; }
         public string morada { get; set; } 
 
-        public Classificacao classificacao { get; set; }
+        public ICollection<Classificacao> classificacao { get; set; }
 
-        public List<Leilao>? leiloes {  get; set; }
+        public ICollection<Leilao>? leiloes {  get; set; }
 
         public Saldo saldo { get; set; }
     }

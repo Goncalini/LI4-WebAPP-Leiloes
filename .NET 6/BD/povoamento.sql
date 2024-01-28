@@ -1,31 +1,31 @@
 USE [LI4DB]
 
 -- Povoar a tabela Utilizador
-INSERT INTO [dbo].[Utilizador] ([Username], [Primeiro Nome], [Segundo Nome], [Email], [Password], [Contacto Telefónico], [Morada], [Saldo])
+INSERT INTO [dbo].[Utilizador] ([Username], [Primeiro Nome], [Segundo Nome], [Email], [Password], [Contacto Telefï¿½nico], [Morada], [Saldo])
 VALUES
-('joaosilva', 'João', 'Silva', 'joao.silva@email.com', 'password123', '912345678', 'Rua das Flores, nº 123', 150.00),
-('mariasantos', 'Maria', 'Santos', 'maria.santos@email.com', 'maria456', '933333333', 'Avenida dos Aliados, nº 456', 300.00),
-('carlosfernandes', 'Carlos', 'Fernandes', 'carlos.fernandes@email.com', 'carlos789', '965432123', 'Rua do Sol, nº 789', 200.00),
-('anapereira', 'Ana', 'Pereira', 'ana.pereira@email.com', 'anapass987', '922222222', 'Rua das Árvores, nº 987', 400.00),
-('pedrooliveira', 'Pedro', 'Oliveira', 'pedro.oliveira@email.com', 'pedro123', '911111111', 'Rua das Pedras, nº 321', 250.00);
+('joaosilva', 'Joï¿½o', 'Silva', 'joao.silva@email.com', 'password123', '912345678', 'Rua das Flores, nï¿½ 123', 500.00,150.00),
+('mariasantos', 'Maria', 'Santos', 'maria.santos@email.com', 'maria456', '933333333', 'Avenida dos Aliados, nï¿½ 456', 1400.00,300.00),
+('carlosfernandes', 'Carlos', 'Fernandes', 'carlos.fernandes@email.com', 'carlos789', '965432123', 'Rua do Sol, nï¿½ 789', 450.00, 200.00),
+('anapereira', 'Ana', 'Pereira', 'ana.pereira@email.com', 'anapass987', '922222222', 'Rua das ï¿½rvores, nï¿½ 987', 430.00, 400.00),
+('pedrooliveira', 'Pedro', 'Oliveira', 'pedro.oliveira@email.com', 'pedro123', '911111111', 'Rua das Pedras, nï¿½ 321', 800.00, 250.00);
 
 -- Povoar a tabela Categoria
 INSERT INTO [dbo].[Categoria] ([ID], [Nome])
 VALUES
-(1, 'Figuras de Ação'),
+(1, 'Figuras de Aï¿½ï¿½o'),
 (2, 'Banda Desenhada'),
-(3, 'Filmes e Séries'),
+(3, 'Filmes e Sï¿½ries'),
 (4, 'Jogos de Tabuleiro'),
 (5, 'Video Jogos');
 
--- Povoar a tabela Leilão
-INSERT INTO [dbo].[Leilão] ([LeilãoID], [Tipo do Leilão], [Estado], [Nome do produto], [Categoria do produto], [Marca do Produto], [Username do Vendedor], [Descrição], [TempoLimite], [Valor inicial], [Data de termino])
+-- Povoar a tabela Leilï¿½o
+INSERT INTO [dbo].[Leilï¿½o] ([Leilï¿½oID], [Tipo do Leilï¿½o], [Estado], [Nome do produto], [Categoria do produto], [Marca do Produto], [Username do Vendedor], [Descriï¿½ï¿½o], [TempoLimite], [Valor inicial], [Data de termino])
 VALUES
-(1, 'Inglês', 'Novo', 'Action Figura Spider-Man', 1, 0x456C656374726F6E696373, 'joaosilva', 'Figura super rara', '02:00:00', 1000.00, '2024-02-10 15:00:00'),
-(2, 'Japonês', 'Muito Bom', 'Edição Rara de Batman: The Dark Knight Returns', 2, 0x4265727279, 'mariasantos', 'Edição Rara de Batman: The Dark Knight Returns', '03:30:00', 200.00, '2024-02-15 18:30:00'),
-(3, 'Inglês', 'Satisfaz', 'Harry Potter e a Pedra Filosofal', 3, 0x4861727279506F74746572, 'carlosfernandes', 'Livro de ficção de J.K. Rowling', '01:45:00', 20.00, '2024-02-05 12:45:00'),
-(4, 'Japonês', 'Novo', 'Cluedo De Fortnite', 4, 0x4E6174757A7A69, 'anapereira', 'Jogo super raro temático', '04:15:00', 50000.00, '2024-02-20 20:15:00'),
-(5, 'Inglês', 'Novo', 'Clash Royale Super Deluxe', 5, 0x5370656369616C697A6564, 'pedrooliveira', 'Jogo super exclusivo', '02:30:00', 300.00, '2024-02-08 14:30:00');
+(1, 'Inglï¿½s', 'Novo', 'Action Figura Spider-Man', 1, 0x456C656374726F6E696373, 'joaosilva', 'Figura super rara', '02:00:00', 1000.00, '2024-02-10 15:00:00'),
+(2, 'Japonï¿½s', 'Muito Bom', 'Ediï¿½ï¿½o Rara de Batman: The Dark Knight Returns', 2, 0x4265727279, 'mariasantos', 'Ediï¿½ï¿½o Rara de Batman: The Dark Knight Returns', '03:30:00', 200.00, '2024-02-15 18:30:00'),
+(3, 'Inglï¿½s', 'Satisfaz', 'Harry Potter e a Pedra Filosofal', 3, 0x4861727279506F74746572, 'carlosfernandes', 'Livro de ficï¿½ï¿½o de J.K. Rowling', '01:45:00', 20.00, '2024-02-05 12:45:00'),
+(4, 'Japonï¿½s', 'Novo', 'Cluedo De Fortnite', 4, 0x4E6174757A7A69, 'anapereira', 'Jogo super raro temï¿½tico', '04:15:00', 50000.00, '2024-02-20 20:15:00'),
+(5, 'Inglï¿½s', 'Novo', 'Clash Royale Super Deluxe', 5, 0x5370656369616C697A6564, 'pedrooliveira', 'Jogo super exclusivo', '02:30:00', 300.00, '2024-02-08 14:30:00');
 
 -- Povoar a tabela Carregamentos
 INSERT INTO [dbo].[Carregamentos] ([Username], [Data], [Valor], [IDCarregamento])
@@ -36,8 +36,8 @@ VALUES
 ('anapereira', '2024-01-29 17:15:00', 120.00, 4),
 ('pedrooliveira', '2024-01-30 19:30:00', 90.00, 5)
 
--- Povoar a tabela Licitação
-INSERT INTO [dbo].[Licitação] ([LicitaçãoID], [Tempo], [Valor], [UserUsername], [IDLeilão])
+-- Povoar a tabela Licitaï¿½ï¿½o
+INSERT INTO [dbo].[Licitaï¿½ï¿½o] ([Licitaï¿½ï¿½oID], [Tempo], [Valor], [UserUsername], [IDLeilï¿½o])
 VALUES
 (1, '2024-02-10 14:55:00', 1100.00, 'mariasantos', 1),
 (2, '2024-02-15 18:00:00', 250.00, 'carlosfernandes', 2),
@@ -45,17 +45,17 @@ VALUES
 (4, '2024-02-20 20:00:00', 550.00, 'pedrooliveira', 4),
 (5, '2024-02-08 14:00:00', 350.00, 'joaosilva', 5);
 
--- Povoar a tabela Avaliação
-INSERT INTO [dbo].[Avaliação] ([AvaliaçãoID], [UsernameClient], [UsernameUser], [Avaliação], [Comentario])
+-- Povoar a tabela Avaliaï¿½ï¿½o
+INSERT INTO [dbo].[Avaliaï¿½ï¿½o] ([Avaliaï¿½ï¿½oID], [UsernameClient], [UsernameUser], [Avaliaï¿½ï¿½o], [Comentario])
 VALUES
-(1, 'joaosilva', 'mariasantos', 4, 'Ótima transação, rápido e eficiente'),
+(1, 'joaosilva', 'mariasantos', 4, 'ï¿½tima transaï¿½ï¿½o, rï¿½pido e eficiente'),
 (2, 'mariasantos', 'carlosfernandes', 5, 'Produto de qualidade, entrega no prazo'),
-(3, 'carlosfernandes', 'anapereira', 3, 'Alguns danos no sofá, mas aceitável'),
+(3, 'carlosfernandes', 'anapereira', 3, 'Alguns danos no sofï¿½, mas aceitï¿½vel'),
 (4, 'anapereira', 'pedrooliveira', 5, 'Bicicleta em perfeito estado, como descrito'),
-(5, 'pedrooliveira', 'joaosilva', 4, 'Entrega rápida, satisfeito com a compra');
+(5, 'pedrooliveira', 'joaosilva', 4, 'Entrega rï¿½pida, satisfeito com a compra');
 
--- Descartar a tabela Avaliação
-DROP TABLE IF EXISTS [dbo].[Avaliação];
+-- Descartar a tabela Avaliaï¿½ï¿½o
+DROP TABLE IF EXISTS [dbo].[Avaliaï¿½ï¿½o];
 
 -- Descartar a tabela Carregamentos
 DROP TABLE IF EXISTS [dbo].[Carregamentos];
@@ -66,11 +66,11 @@ DROP TABLE IF EXISTS [dbo].[Categoria];
 -- Descartar a tabela "Foto do produto"
 DROP TABLE IF EXISTS [dbo].[Foto do produto];
 
--- Descartar a tabela Leilão
-DROP TABLE IF EXISTS [dbo].[Leilão];
+-- Descartar a tabela Leilï¿½o
+DROP TABLE IF EXISTS [dbo].[Leilï¿½o];
 
--- Descartar a tabela Licitação
-DROP TABLE IF EXISTS [dbo].[Licitação];
+-- Descartar a tabela Licitaï¿½ï¿½o
+DROP TABLE IF EXISTS [dbo].[Licitaï¿½ï¿½o];
 
 -- Descartar a tabela Utilizador
 DROP TABLE IF EXISTS [dbo].[Utilizador];
