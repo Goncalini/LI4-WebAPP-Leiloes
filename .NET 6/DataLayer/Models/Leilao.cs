@@ -22,12 +22,12 @@ namespace DataLayer.Models
 
         public DateTime dataDeTermino { get; set; }
 
-        public string vendedorId {  get; set; } 
-
+        public string vendedorId {  get; set; }
+        [ForeignKey("vendedorId")]
         public Utilizador Vendedor { get; set; }
 
         public int idCategoria { get; set; }
-
+        [ForeignKey("idCategoria")]
         public Categoria categoria_produto { get; set; }
 
         public string nome { get; set; }
