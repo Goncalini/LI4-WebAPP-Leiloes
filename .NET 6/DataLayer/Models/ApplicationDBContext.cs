@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BlazorApp1.Models;
-using DataLayer.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataLayer.Services
+namespace DataLayer.Models
 {
     public class ApplicationDbContext : DbContext
     {
@@ -20,10 +19,10 @@ namespace DataLayer.Services
         public DbSet<Licitacao> licitacoes { get; set; }
         public DbSet<Produto> produtos { get; set; }
 
-        public ApplicationDbContext()
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            :base(options)
         {
             ConnectionString = "Data Source=GONCALINI;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
-
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -31,7 +30,7 @@ namespace DataLayer.Services
             optionsBuilder.UseSqlServer(ConnectionString,
                 providerOptions => { providerOptions.EnableRetryOnFailure(); });
         }
-        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Leilao>(entity =>
@@ -104,7 +103,7 @@ namespace DataLayer.Services
 
             base.OnModelCreating(modelBuilder);
         }
-        
+
 
     }
 
