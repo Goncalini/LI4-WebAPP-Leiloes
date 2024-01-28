@@ -15,6 +15,8 @@ namespace DataLayer.Models
 
         public string usernameUser { get; set; }
 
+        public Utilizador user {  get; set; }
+
         public int aval { get; set; }
 
         public string comentario { get; set; }

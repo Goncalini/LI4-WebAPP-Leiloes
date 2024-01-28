@@ -20,6 +20,10 @@ namespace DataLayer.Models
 
         public ICollection<Leilao>? leiloes {  get; set; }
 
-        public Saldo saldo { get; set; }
+        public ICollection<Carregamento>? carregamentos { get; set; }
+
+        public double valor { get; set; }
+
+        public double saldo_fantasma { get; set; }
     }
 }

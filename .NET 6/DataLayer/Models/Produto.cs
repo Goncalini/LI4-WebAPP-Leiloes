@@ -8,6 +8,7 @@ namespace DataLayer.Models
 {
     public class Produto
     {
+        public int idCategoria {  get; set; }
         public Categoria categoria_produto { get; set; }
         
         public string nome { get; set; }

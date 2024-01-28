@@ -22,8 +22,20 @@ namespace DataLayer.Models
 
         public DateTime dataDeTermino { get; set; }
 
-        public Utilizador vendedor {  get; set; } 
+        public string vendedorId {  get; set; } 
 
-        public Produto produto { get; set; }
+        public Utilizador Vendedor { get; set; }
+
+        public int idCategoria { get; set; }
+
+        public Categoria categoria_produto { get; set; }
+
+        public string nome { get; set; }
+
+        public string marca { get; set; }
+
+        public string descricao { get; set; }
+
+        public string estado { get; set; }
     }
 }

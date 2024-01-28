@@ -39,12 +39,12 @@ namespace DataLayer.Models
             {
                 entity.HasKey(e => e.id);
                 entity.Property(e => e.tipo).IsRequired().HasColumnName("Tipo do Leilão").HasColumnType("varchar(10)");
-                entity.Property(e => e.produto.estado).IsRequired().HasColumnName("Estado").HasColumnType("varchar(10)");
-                entity.Property(e => e.produto.nome).IsRequired().HasColumnName("Nome do Produto").HasColumnType("varchar(50)");
-                entity.Property(e => e.produto.categoria_produto).IsRequired().HasColumnName("Categoria do Produto").HasColumnType("varchar(50)");
-                entity.Property(e => e.produto.marca).IsRequired().HasColumnName("Marca do Produto").HasColumnType("varbinary(20)");
+                entity.Property(e => e.estado).IsRequired().HasColumnName("Estado").HasColumnType("varchar(10)");
+                entity.Property(e => e.nome).IsRequired().HasColumnName("Nome do Produto").HasColumnType("varchar(50)");
+                entity.Property(e => e.idCategoria).IsRequired().HasColumnName("Categoria do Produto").HasColumnType("varchar(50)");
+                entity.Property(e => e.marca).IsRequired().HasColumnName("Marca do Produto").HasColumnType("varbinary(20)");
                 entity.Property(e => e.vendedorId).IsRequired().HasColumnName("Username do Vendedor").HasColumnType("varchar(50)");
-                entity.Property(e => e.produto.descricao).IsRequired().HasColumnName("Descrição").HasColumnType("text");
+                entity.Property(e => e.descricao).IsRequired().HasColumnName("Descrição").HasColumnType("text");
                 entity.Property(e => e.tempo_limite).IsRequired().HasColumnName("TempoLimite").HasColumnType("time(7)");
                 entity.Property(e => e.preco_inicial).IsRequired().HasColumnName("Valor Inicial").HasColumnType("float");
                 entity.Property(e => e.dataDeTermino).IsRequired().HasColumnName("Data de termino").HasColumnType("datetime");
@@ -55,7 +55,7 @@ namespace DataLayer.Models
                 entity.HasKey(e => e.id);
                 entity.Property(e => e.Data).IsRequired().HasColumnName("Data").HasColumnType("datetime");
                 entity.Property(e => e.valor).IsRequired().HasColumnName("Valor").HasColumnType("float");
-                entity.Property(e => e.utilizador.usernameId).IsRequired().HasColumnName("Username").HasColumnType("varchar(50)");
+                entity.Property(e => e.Username).IsRequired().HasColumnName("Username").HasColumnType("varchar(50)");
             });
 
             modelBuilder.Entity<Utilizador>(entity =>
@@ -67,8 +67,8 @@ namespace DataLayer.Models
                 entity.Property(e => e.password).IsRequired().HasColumnName("Password").HasColumnType("varchar(30)");
                 entity.Property(e => e.contacto).IsRequired().HasColumnName("Contacto Telefonico").HasColumnType("varchar(9)");
                 entity.Property(e => e.morada).IsRequired().HasColumnName("Morada").HasColumnType("varchar(50)");
-                entity.Property(e => e.saldo.valor).IsRequired().HasColumnName("Saldo").HasColumnType("float");
-                entity.Property(e => e.saldo.saldo_fantasma).IsRequired().HasColumnName("Saldo Fantasma").HasColumnType("float");
+                entity.Property(e => e.valor).IsRequired().HasColumnName("Saldo").HasColumnType("float");
+                entity.Property(e => e.saldo_fantasma).IsRequired().HasColumnName("Saldo Fantasma").HasColumnType("float");
             });
 
             modelBuilder.Entity<Licitacao>(entity =>
