@@ -1,0 +1,43 @@
+﻿@page "/register"
+
+<PageTitle>Register</PageTitle>
+
+<div class="min-h-screen bg-gray-200 flex justify-center items-center">
+
+    <div class="bg-white h-[530px] w-[400px]">
+        <h1 class="pt-10 pb-1 text-center font-black text-3xl">Create Account</h1>
+
+        <div class="space-y-2 m-4">
+            <input type="text" id="name" placeholder="First and Last Name"
+                   class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+
+            <input type="text" id="username" placeholder="Username"
+                   class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+
+            <input type="email" id="email" placeholder="Email"
+                   class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+
+            <input type="tel" id="tele" placeholder="Phone Number"
+                   class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+
+            <input type="text" id="morada" placeholder="Address"
+                   class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+
+            <input type="password" id="password" placeholder="Password"
+                   class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+
+            <input type="password" id="confirma_password"
+                   placeholder="Repeat Password" class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+        </div>
+
+        <div class="flex justify-end mr-6">
+            <button type="submit" class="px-10 py-2 bg-red-500 rounded-3xl shadow text-white text-center text-lg font-semibold justify-items-end items-center inline-flex hover:bg-red-400">Create</button>
+        </div>
+
+    </div>
+</div>
+
+@code {
+
+}
+
