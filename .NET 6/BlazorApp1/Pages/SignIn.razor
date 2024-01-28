@@ -1,0 +1,26 @@
+﻿@page "/signIn"
+
+<div class="min-h-screen bg-gray-200 flex justify-center items-center">
+
+    <div class="bg-white h-[320px] w-[400px]">
+        <h1 class="pt-10 pb-1 text-center font-black text-3xl">Sign-in</h1>
+
+        <div class="space-y-5 m-4">
+            <input type="text" id="name" placeholder="Username or Email"
+                   class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+
+            <input type="password" id="password" placeholder="Password"
+                   class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
+        </div>
+
+        <div class="flex justify-end mr-6">
+            <button type="submit" class="px-10 py-2 bg-red-500 rounded-3xl shadow text-white text-center text-lg font-semibold justify-items-end items-center inline-flex hover:bg-red-400">Continue</button>
+        </div>
+
+    </div>
+</div>
+
+
+@code {
+
+}

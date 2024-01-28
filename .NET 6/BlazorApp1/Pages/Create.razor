@@ -1,0 +1,79 @@
+﻿@page "/iniciarLeilao"
+
+<div class="min-h-screen bg-gray-200 flex flex-wrap justify-center w-full">
+
+    <!--falta meter a cena de carregar ficheiros e ficar com eles la! aka funcional-->
+    <div class="mt-8 mb-4 flex flex-col items-center justify-center bg-red-200 rounded-2xl border-1 border-zinc-300 h-64 w-7/12 cursor-pointer">
+        <p class="font-bold text-2xl text-black/40">
+            + Load Photos
+        </p>
+        <p class="font-smedium text-sm text-black/40">PNG or JPG</p>
+        <input id="carrega-ficheiros" type="file" class="hidden">
+    </div>
+
+
+    <!--opçoes da criação-->
+    <div class="my-4 bg-white rounded-2xl h-64 w-7/12 grid grid-cols-2">
+
+        <input type="text" id="titulo" placeholder="Title"
+               class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
+
+        <!--meter a cena do dropdown-->
+
+        <select id="estado"
+                class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl dark:text-zinc-500" required>
+            <option value="" disabled selected>Select Condition</option>
+            <option value="1">Very Good</option>
+            <option value="2">Good</option>
+            <option value="3">OK</option>
+            <option value="4">Bad</option>
+            <option value="2">Very Bad</option>
+        </select>
+
+
+        <input type="number" id="preco_inicial" placeholder="Initial Price (€)"
+               class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
+
+        <input type="text" id="marca" placeholder="Brand"
+               class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
+
+        <!--meter a cena do dropdown-->
+        <input type="text" id="categoria" placeholder="Category"
+               class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
+
+
+        <select id="tipo_leilao"
+                class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl dark:text-zinc-500" required>
+            <option value="" disabled selected>Select auction type</option>
+            <option value="1">Inglês</option>
+            <option value="2">Holândes</option>
+        </select>
+
+    </div>
+
+    <!--ver se tirar o cena de aumentar-->
+    <div class="my-4 flex items-center justify-center bg-white rounded-2xl h-52 w-7/12">
+
+        <textarea id="message" rows="6" placeholder="Write a description of the product you are going to auction here..."
+                  class="block p-3 w-full h-full text-xl text-zinc-800 bg-white rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-black dark:placeholder-gray-400 dark:text-black"></textarea>
+    </div>
+
+
+    <!--butoes confirmar e cancelar-->
+    <div class="flex w-full mr-52 mt-4 mb-8 gap-5 justify-end inline-flex">
+        <button type="submit" class="bg-red-500 rounded-2xl shadow px-12 py-3 text-white text-center text-lg font-bold justify-items-end items-center hover:bg-red-400">
+            Cancel
+        </button>
+
+        <button type="submit" class="bg-red-500 rounded-2xl shadow px-10 py-3 text-white text-center text-lg font-bold justify-items-end items-center hover:bg-red-400">
+            Confirm
+        </button>
+    </div>
+
+</div>
+
+
+
+@code {
+
+}
