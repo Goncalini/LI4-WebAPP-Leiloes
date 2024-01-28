@@ -24,7 +24,7 @@ namespace DataLayer.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             :base(options)
         {
-            ConnectionString = "Data Source=GONCALINI;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            ConnectionString = "Server=LAPTOP-43KJKR4F\\SQLEXPRESS;Database=LI4DB;Trusted_Connection=True;MultipleActiveResultSets=true";
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

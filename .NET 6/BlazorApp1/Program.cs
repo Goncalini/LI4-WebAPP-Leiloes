@@ -3,21 +3,23 @@ using DataLayer;
 using DataLayer.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using DataLayer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("Default")
+    ?? throw new NullReferenceException("No connection!");
+
+builder.Services.AddDbContextFactory<ApplicationDbContext>((DbContextOptionsBuilder options) =>
+    options.UseSqlServer(connectionString));
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddTransient<UtilizadorService>();
+builder.Services.AddSingleton<UtilizadorService>();
+builder.Services.AddControllersWithViews();
 
-/*
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseSqlServer("Data Source=GONCALINI;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
-});
-*/
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

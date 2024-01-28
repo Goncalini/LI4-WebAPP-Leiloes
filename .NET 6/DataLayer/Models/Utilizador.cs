@@ -1,7 +1,7 @@
 ﻿using DataLayer.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace BlazorApp1.Models
+namespace DataLayer.Models
 {
     public class Utilizador
     {
