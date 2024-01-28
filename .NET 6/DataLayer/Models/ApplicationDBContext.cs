@@ -15,9 +15,11 @@ namespace DataLayer.Models
         public DbSet<Categoria> categorias { get; set; }
         public DbSet<Classificacao> classificacoes { get; set; }
         public DbSet<Utilizador> utilizadores { get; set; }
-        public DbSet<Saldo> saldos { get; set; }
+        public DbSet<Carregamento> carregamentos { get; set; }
         public DbSet<Licitacao> licitacoes { get; set; }
         public DbSet<Produto> produtos { get; set; }
+
+        //public DbSet<Saldo> saldos { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             :base(options)
@@ -51,7 +53,7 @@ namespace DataLayer.Models
 
             modelBuilder.Entity<Carregamento>(entity =>
             {
-                entity.HasKey(e => e.IDCarregamento);
+                entity.HasKey(e => e.id);
                 entity.Property(e => e.Data).IsRequired().HasColumnName("Data").HasColumnType("datetime");
                 entity.Property(e => e.valor).IsRequired().HasColumnName("Valor").HasColumnType("float");
                 entity.Property(e => e.utilizador.usernameId).IsRequired().HasColumnName("Username").HasColumnType("varchar(50)");
