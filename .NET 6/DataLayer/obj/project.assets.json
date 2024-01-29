@@ -2295,19 +2295,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marta\\.nuget\\packages\\": {}
+    "C:\\Users\\Carlos\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marta\\OneDrive\\Ambiente de Trabalho\\LEI\\LI4\\APP\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos\\Desktop\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "C:\\Users\\marta\\OneDrive\\Ambiente de Trabalho\\LEI\\LI4\\APP\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
-      "packagesPath": "C:\\Users\\marta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marta\\OneDrive\\Ambiente de Trabalho\\LEI\\LI4\\APP\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
+      "projectPath": "C:\\Users\\Carlos\\Desktop\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+      "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Carlos\\Desktop\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\marta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2375,12 +2380,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
