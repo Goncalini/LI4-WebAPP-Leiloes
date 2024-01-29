@@ -10,7 +10,7 @@ namespace DataLayer.Models
 {
     public class Classificacao
     {
-        [Key] public int avaliacaoId { get; set; }
+        [Key] public int AvaliaçãoID { get; set; }
 
         public string usernameCliente { get; set; }
 

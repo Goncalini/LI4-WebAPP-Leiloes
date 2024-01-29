@@ -23,7 +23,13 @@ namespace DataLayer.Services
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                context.classificacoes.Add(classi);
+                int id = classi.AvaliaçãoID;
+                Classificacao lei = FindById(id);
+                if (lei == null)
+                    context.Avaliação.Add(classi);
+                else
+                    context.Avaliação.Update(classi);
+                context.SaveChanges();
             }
         }
 
@@ -31,9 +37,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var classi = _context.classificacoes.Find(id);
+                var classi = _context.Avaliação.Find(id);
 
-                _context.classificacoes.Remove(classi);
+                _context.Avaliação.Remove(classi);
                 _context.SaveChanges();
             }
 
@@ -42,13 +48,13 @@ namespace DataLayer.Services
         public Classificacao FindById(int id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.classificacoes.SingleOrDefault(x => x.avaliacaoId == id);
+                return _context.Avaliação.SingleOrDefault(x => x.AvaliaçãoID == id);
         }
 
         public List<Classificacao> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.classificacoes.ToList();
+                return _context.Avaliação.ToList();
         }
 
         public float GetMediaUser(string username)
@@ -57,7 +63,7 @@ namespace DataLayer.Services
             var all = new List<Classificacao>();
             var sum = 0;
             using (var _context = _dbContextFactory.CreateDbContext())
-                all = _context.classificacoes.ToList().FindAll(x => x.usernameUser == username);
+                all = _context.Avaliação.ToList().FindAll(x => x.usernameUser == username);
 
             foreach (Classificacao item in all)
             {

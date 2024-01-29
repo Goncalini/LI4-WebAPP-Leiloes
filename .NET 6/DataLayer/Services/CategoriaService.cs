@@ -21,7 +21,8 @@ namespace DataLayer.Services
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                context.carregamentos.Add(categoria);
+                context.Categoria.Add(categoria);
+                context.SaveChanges();
             }
         }
 
@@ -29,9 +30,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var categoria = _context.categorias.Find(id);
+                var categoria = _context.Categoria.Find(id);
 
-                _context.categorias.Remove(categoria);
+                _context.Categoria.Remove(categoria);
                 _context.SaveChanges();
             }
 
@@ -40,13 +41,13 @@ namespace DataLayer.Services
         public Categoria FindById(int id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.categorias.SingleOrDefault(x => x.id == id);
+                return _context.Categoria.SingleOrDefault(x => x.ID == id);
         }
 
         public List<Categoria> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.categorias.ToList();
+                return _context.Categoria.ToList();
         }
      }
 }

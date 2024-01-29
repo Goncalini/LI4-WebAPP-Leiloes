@@ -9,7 +9,7 @@ namespace DataLayer.Models
 {
     public class Categoria
     {
-        [Key] public int id { get; set; }
+        [Key] public int ID { get; set; }
 
         public string nome { get; set; }
 

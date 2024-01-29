@@ -9,9 +9,9 @@ namespace DataLayer.Models
 {
     public class Foto
     {
-        public int idLeilao { get; set; }
+        public int IDLeilão { get; set; }
 
-        public string fotoPath { get; set; }
+        public string FotoPath { get; set; }
 
         public Leilao leilao { get; set; }
 

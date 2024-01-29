@@ -21,7 +21,13 @@ namespace DataLayer.Services
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                context.licitacoes.Add(licitacao);
+                int id = licitacao.LicitaçãoID;
+                Licitacao licit = FindById(id);
+                if (licit == null)
+                    context.Licitação.Add(licitacao);
+                else
+                    context.Licitação.Update(licitacao);
+                context.SaveChanges();
             }
         }
 
@@ -29,9 +35,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var leilao = _context.licitacoes.Find(id);
+                var leilao = _context.Licitação.Find(id);
 
-                _context.licitacoes.Remove(leilao);
+                _context.Licitação.Remove(leilao);
                 _context.SaveChanges();
             }
 
@@ -40,13 +46,13 @@ namespace DataLayer.Services
         public Licitacao FindById(int id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.licitacoes.SingleOrDefault(x => x.numero == id);
+                return _context.Licitação.SingleOrDefault(x => x.LicitaçãoID == id);
         }
 
         public List<Licitacao> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.licitacoes.ToList();
+                return _context.Licitação.ToList();
         }
     }
 }

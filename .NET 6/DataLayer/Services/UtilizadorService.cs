@@ -22,12 +22,12 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                string id = utilizador.usernameId;
+                string id = utilizador.Username;
                 Utilizador user = FindById(id);
                 if (user == null)
-                    _context.utilizadores.Add(utilizador);
+                    _context.Utilizador.Add(utilizador);
                 else
-                    _context.utilizadores.Update(utilizador);
+                    _context.Utilizador.Update(utilizador);
                 _context.SaveChanges();
             }
         }
@@ -36,9 +36,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var utilizador = _context.utilizadores.Find(id);
+                var utilizador = _context.Utilizador.Find(id);
 
-                _context.utilizadores.Remove(utilizador);
+                _context.Utilizador.Remove(utilizador);
                 _context.SaveChanges();
             }
 
@@ -47,13 +47,13 @@ namespace DataLayer.Services
         public Utilizador FindById(string id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.utilizadores.SingleOrDefault(x => x.usernameId == id);
+                return _context.Utilizador.SingleOrDefault(x => x.Username == id);
         }
 
         public List<Utilizador> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.utilizadores.ToList();
+                return _context.Utilizador.ToList();
         }
     }
 }

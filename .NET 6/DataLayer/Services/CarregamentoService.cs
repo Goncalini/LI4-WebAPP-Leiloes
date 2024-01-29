@@ -21,7 +21,8 @@ namespace DataLayer.Services
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                context.carregamentos.Add(carregamento);
+                context.Carregamentos.Add(carregamento);
+                context.SaveChanges();
             }
         }
 
@@ -29,9 +30,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var leilao = _context.carregamentos.Find(id);
+                var leilao = _context.Carregamentos.Find(id);
 
-                _context.carregamentos.Remove(leilao);
+                _context.Carregamentos.Remove(leilao);
                 _context.SaveChanges();
             }
 
@@ -40,18 +41,18 @@ namespace DataLayer.Services
         public Carregamento FindById(int id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.carregamentos.SingleOrDefault(x => x.id == id);
+                return _context.Carregamentos.SingleOrDefault(x => x.IDCarregamento == id);
         }
 
         public List<Carregamento> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.carregamentos.ToList();
+                return _context.Carregamentos.ToList();
         }
         public List<Carregamento> GetAllUser(string username)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.carregamentos.ToList().FindAll(x => x.Username == username);
+                return _context.Carregamentos.ToList().FindAll(x => x.Username == username);
         }
     }
 }

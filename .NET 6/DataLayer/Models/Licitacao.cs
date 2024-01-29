@@ -1,5 +1,4 @@
-﻿using BlazorApp1.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,7 +10,7 @@ namespace DataLayer.Models
 {
     public class Licitacao
     {
-        [Key]public int numero {  get; set; }
+        [Key]public int LicitaçãoID {  get; set; }
 
         public string userUsername { get; set; }
 
@@ -19,7 +18,7 @@ namespace DataLayer.Models
 
         public double valor { get; set; }
 
-        public TimeSpan tempo { get; set; }
+        public DateTime tempo { get; set; }
         [ForeignKey("userUsername")]
         public Utilizador cliente {  get; set; }
         [ForeignKey("iDLeilao")]

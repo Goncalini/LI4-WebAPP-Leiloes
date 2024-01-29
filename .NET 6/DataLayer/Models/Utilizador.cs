@@ -5,7 +5,7 @@ namespace DataLayer.Models
 {
     public class Utilizador
     {
-        public string usernameId { get; set; }
+        public string Username { get; set; }
         
         public string primeiroNome { get; set; }
 

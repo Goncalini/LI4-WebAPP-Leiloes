@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {}
+    "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\gonca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
+        "projectPath": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gonca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

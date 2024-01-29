@@ -1,5 +1,4 @@
 ﻿using System;
-using BlazorApp1.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +9,11 @@ namespace DataLayer.Models
 {
     public class Leilao
     {
-        public int id {  get; set; }
+        public int LeilãoID {  get; set; }
 
         public double preco_inicial {  get; set; }
 
-        public DateTime tempo_limite { get; set; }
+        public TimeSpan tempo_limite { get; set; }
 
         public string tipo { get; set; }
 

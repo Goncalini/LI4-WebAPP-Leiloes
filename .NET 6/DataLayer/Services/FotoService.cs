@@ -21,7 +21,8 @@ namespace DataLayer.Services
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                context.fotos.Add(foto);
+                context.FotoDoProduto.Add(foto);
+                context.SaveChanges();
             }
         }
 
@@ -29,9 +30,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var foto = _context.fotos.Find(id);
+                var foto = _context.FotoDoProduto.Find(id);
 
-                _context.fotos.Remove(foto);
+                _context.FotoDoProduto.Remove(foto);
                 _context.SaveChanges();
             }
 
@@ -40,19 +41,19 @@ namespace DataLayer.Services
         public Foto FindById(string path)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.fotos.SingleOrDefault(x => x.fotoPath == path);
+                return _context.FotoDoProduto.SingleOrDefault(x => x.FotoPath == path);
         }
 
         public List<Foto> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.fotos.ToList();
+                return _context.FotoDoProduto.ToList();
         }
 
         public List<Foto> GetAll(int id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.fotos.ToList().FindAll( x => x.idLeilao == id);
+                return _context.FotoDoProduto.ToList().FindAll( x => x.IDLeilão == id);
         }
     }
 }

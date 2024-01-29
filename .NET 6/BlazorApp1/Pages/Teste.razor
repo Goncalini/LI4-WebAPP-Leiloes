@@ -1,0 +1,90 @@
+﻿@page "/teste"
+@using DataLayer.Services
+@using DataLayer.Models
+@inject UtilizadorService userService;
+@inject LicitacaoService licitService;
+@inject LeilaoService leilaoService;
+@inject ClassificacaoService classService;
+@inject CategoriaService categoriaService;
+@inject CarregamentoService carregamentoService;
+
+<PageTitle>Teste</PageTitle>
+
+<EditForm Model="@user" OnValidSubmit="HandleSubmit">
+	<label for="Nome">Nome</label>
+	<InputText id="Nome" @bind-Value="@user.primeiroNome"></InputText>
+	<label for="Segundo">Segundo</label>
+	<InputText id="Segundo" @bind-Value="@user.segundoNome"></InputText>
+	<label for="Username">Username</label>
+	<InputText id="Username" @bind-Value="@user.Username"></InputText>
+	<label for="Email">Email</label>
+	<newline>
+	<InputText id="Email" @bind-Value="@user.email"></InputText>
+	<label for="Phone">Telemovel</label>
+	<InputText id="Phone" @bind-Value="@user.contacto"></InputText>
+	<label for="morada">Morada</label>
+	<InputText id="morada" @bind-Value="@user.morada"></InputText>
+	<label for="password">Password</label>
+	<InputText id="password" @bind-Value="@user.password"></InputText>
+	</newline>
+	<button type="submit" class="btn-primary">Create</button>
+</EditForm>
+
+<EditForm Model="@user" OnValidSubmit="HandleSubmit">
+	<label for="Nome">Nome</label>
+	<InputText id="Nome" @bind-Value="@user.primeiroNome"></InputText>
+	<label for="Segundo">Segundo</label>
+	<InputText id="Segundo" @bind-Value="@user.segundoNome"></InputText>
+	<label for="Username">Username</label>
+	<InputText id="Username" @bind-Value="@user.Username"></InputText>
+	<label for="Email">Email</label>
+	<newline>
+	<InputText id="Email" @bind-Value="@user.email"></InputText>
+	<label for="Phone">Telemovel</label>
+	<InputText id="Phone" @bind-Value="@user.contacto"></InputText>
+	<label for="morada">Morada</label>
+	<InputText id="morada" @bind-Value="@user.morada"></InputText>
+	<label for="password">Password</label>
+	<InputText id="password" @bind-Value="@user.password"></InputText>
+	</newline>
+	<button type="submit" class="btn-primary">Create</button>
+</EditForm>
+
+<EditForm Model="@licit" OnValidSubmit="HandleSubmit">
+	<label for="Nome">Nome</label>
+	<InputText id="Nome" @bind-Value="@user.primeiroNome"></InputText>
+	<label for="Segundo">Segundo</label>
+	<InputText id="Segundo" @bind-Value="@user.segundoNome"></InputText>
+	<label for="Username">Username</label>
+	<InputText id="Username" @bind-Value="@user.Username"></InputText>
+	<label for="Email">Email</label>
+	<newline>
+	<InputText id="Email" @bind-Value="@user.email"></InputText>
+	<label for="Phone">Telemovel</label>
+	<InputText id="Phone" @bind-Value="@user.contacto"></InputText>
+	<label for="morada">Morada</label>
+	<InputText id="morada" @bind-Value="@user.morada"></InputText>
+	<label for="password">Password</label>
+	<InputText id="password" @bind-Value="@user.password"></InputText>
+	</newline>
+	<button type="submit" class="btn-primary">Create</button>
+</EditForm>
+
+@code{
+	Utilizador user = new Utilizador();
+	Licitacao licit = new Licitacao();
+	Leilao lao = new Leilao();
+	Classificacao class = new Classificacao();
+	Categoria cate = new Categoria();
+	Carregamento carrega = new Carregamento();
+
+	public void HandleSubmit(EditContext editContext){
+		var newCliente = (Utilizador)editContext.Model;
+		userService.AddUpdate(newCliente);
+	}
+
+		public void HandleSubmit2(EditContext editContext){
+		var newLicitacao = (Licitacao)editContext.Model;
+		licitService.AddUpdate(newLicitacao);
+	}
+}

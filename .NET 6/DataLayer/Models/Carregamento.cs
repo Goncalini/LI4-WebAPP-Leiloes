@@ -1,5 +1,4 @@
-﻿using BlazorApp1.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,7 +10,7 @@ namespace DataLayer.Models
 {
     public class Carregamento
     {
-        [Key] public int id { get; set; }
+        [Key] public int IDCarregamento { get; set; }
         public string Username { get; set; }
         [ForeignKey("Username")]
         public Utilizador utilizador { get; set; }
