@@ -13,13 +13,10 @@
     </div>
 
 
-    <!--opçoes da criação-->
-    <div class="my-4 bg-white rounded-2xl h-64 w-7/12 grid grid-cols-2">
+    <div class="my-4 bg-white rounded-2xl h-80 w-7/12 grid grid-cols-2 grid-rows-4">
 
         <input type="text" id="titulo" placeholder="Title"
                class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
-
-        <!--meter a cena do dropdown-->
 
         <select id="estado"
                 class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl dark:text-zinc-500" required>
@@ -32,27 +29,35 @@
         </select>
 
 
-        <input type="number" id="preco_inicial" placeholder="Initial Price (€)"
+        <input type="number" id="preco_inicial" placeholder="Initial Price (€)" min="10"
                class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
 
         <input type="text" id="marca" placeholder="Brand"
                class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
 
-        <!--meter a cena do dropdown-->
-        <input type="text" id="categoria" placeholder="Category"
-               class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
+        <select id="categoria"
+                class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl dark:text-zinc-500" required>
+            <option value="" disabled selected>Category</option>
+            <option value="1">Action/Vinyl Figures</option>
+            <option value="2">Comic</option>
+            <option value="3">Movies and Series</option>
+            <option value="4">Board Games</option>
+            <option value="5">Video Games</option>
+        </select>
 
 
         <select id="tipo_leilao"
                 class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl dark:text-zinc-500" required>
-            <option value="" disabled selected>Select auction type</option>
+            <option value="" disabled selected>Select Auction Type</option>
             <option value="1">Inglês</option>
             <option value="2">Holândes</option>
         </select>
 
+        <input type="time" id="tempo_limite"
+               class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
     </div>
 
-    <!--ver se tirar o cena de aumentar-->
+
     <div class="my-4 flex items-center justify-center bg-white rounded-2xl h-52 w-7/12">
 
         <textarea id="message" rows="6" placeholder="Write a description of the product you are going to auction here..."

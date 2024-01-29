@@ -1,0 +1,54 @@
+﻿@page "/editAccount"
+@layout MainLayoutWnavbar
+
+<div class="min-h-screen fixed w-full  bg-gray-200 flex justify-center">
+
+    <div class="mt-4 bg-white h-[570px] w-[400px]">
+        <form>
+            <h1 class="pt-4 pb-1 text-center font-black text-3xl">Edit Info Account</h1>
+            <!--alterar para ir buscar as informações iniciais-->
+            <div class="m-4">
+
+                <input type="text" id="username" value="Username"
+                       class="w-full p-2.5 text-neutral-400 text-sm font-extralight bg-zinc-300 shadow-sm border border-zinc-300 rounded-3xl block cursor-not-allowed dark:text-black" disabled>
+
+                <input type="email" id="email" value="Email"
+                       class="my-2 w-full p-2.5 text-neutral-400 text-sm font-extralight bg-zinc-300 shadow-sm border border-zinc-300 rounded-3xl block cursor-not-allowed dark:text-black" disabled>
+
+                <label for="name" class="mt-3 block text-sm font-semibold text-gray-900">First and Last Name</label>
+                <input type="text" id="name" placeholder="First and Last Name"
+                       class="mt-1 mb-2 w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black">
+
+                <label for="tele" class="block text-sm font-semibold text-gray-900">Phone Number</label>
+                <input type="tel" id="tele" placeholder="Phone Number"
+                       class="mt-1 mb-2 w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black">
+
+                <label for="morada" class="block text-sm font-semibold text-gray-900">Address</label>
+                <input type="text" id="morada" placeholder="Address"
+                       class="mt-1 mb-2 w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black">
+
+
+                <label for="password" class="block text-sm font-semibold text-gray-900">Password</label>
+                <input type="password" id="password" placeholder="Password"
+                       class="mt-1 mb-1 w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black">
+
+                <p id="helper-text-explanation" class=" text-sm text-gray-600">Only modify the fields you want to change!</p>
+
+            </div>
+
+
+            <div class="flex justify-end mr-6 gap-3 -mt-3">
+                <!--rever o botao cancel!!-->
+                <button type="button" class="text-lg font-semibold">Cancel</button>
+
+                <button type="submit" class="px-10 py-2 bg-red-500 rounded-3xl shadow text-white text-center text-lg font-semibold justify-items-end items-center inline-flex hover:bg-red-400">Confirm</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+@code {
+
+}

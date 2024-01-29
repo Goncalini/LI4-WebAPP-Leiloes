@@ -4,44 +4,71 @@
 
 <div class="min-h-screen bg-gray-200 w-full flex-col">
 
-
     <div class="gap-2 flex justify-start">
 
-        <div class="my-8 ml-16 mr-8 w-1/12">
+        <div class="my-8 ml-20 mr-8 w-1/12">
             <img class="my-8 w-11/12" src="/assets/images/user3.svg">
 
-            <button type="submit" class="bg-red-500 rounded-2xl shadow py-2 px-12 text-white text-center text-lg font-bold justify-items-end items-center hover:bg-red-400">
+            <a href="/editAccount" class="bg-red-500 rounded-2xl shadow py-3 px-12 text-white text-center text-lg font-bold justify-items-end items-center hover:bg-red-400">
                 Edit
-            </button>
+            </a>
+
         </div>
 
-        <!--trocar para ir buscar info-->
+        <!--trocar para ir buscar estas infos-->
         <div class="my-10 justify-start">
-            <p class="mt-8 text-5xl font-extralight">nome</p>
-            <p class="text-2xl font-extralight">avaliacao</p>
-            <p class="text-2xl font-thin">username</p>
+            <p class="mt-8 text-5xl font-light">nome</p>
+            <p class="text-2xl font-light">avaliacao</p>
+            <p class="text-2xl font-extralight">username</p>
         </div>
 
     </div>
-
+    <!--adicionar saldo-->
+    <!--Live Auctions-->
     <div class="mx-5">
         <h2 class="font-bold text-2xl">Live Auctions</h2>
-        <hr class="my-1 h-0-5 bg-black opacity-100 dark:opacity-50" />
+        <hr class="my-1 h-2 bg-black opacity-100 dark:opacity-50" />
 
         <!--adicionar formato leiloes-->
+
+        <div class="mx-14 flex justify-center">
+            <!--formato de uma avaliação apenas!!! ALTERAR DPS meter aqui um for each-->
+
+            <div class="my-3">
+                <h2 class="text-xl font-medium">No more live auctions from this user...</h2>
+            </div>
+        </div>
     </div>
 
 
+    <!--Reviews-->
     <div class="mx-5">
         <h2 class="font-bold text-2xl">Reviews</h2>
-        <hr class="my-1 h-0-5 bg-black opacity-100 dark:opacity-50" />
-        <!--adicionar formato avaliacoes-->
 
+        <hr class="my-1 h-2 bg-black opacity-100 dark:opacity-50" />
+
+        <div class="mx-14">
+            <!--formato de uma avaliação apenas!!! ALTERAR DPS meter aqui um for each-->
+            <div class="flex items-start gap-5">
+                <!--alterar a cor do mano-->
+                <img class="my-10 w-20" src="/assets/images/user3.svg">
+                <div class="my-10 flex-col">
+                    <p class="text-2xl font-extralight">username</p>
+                    <p class="text-lg font-extralight">avaliacao (imagens estrelas)</p>
+                    <p class="mt-2 text-justify text-wrap text-lg font-thin">comentário se existir</p>
+
+                </div>
+
+            </div>
+            <hr class="h-2 bg-black opacity-100 dark:opacity-50" />
+
+            <div class="mt-3 flex justify-center">
+                <h2 class="text-xl font-medium">This user doesn't have any more reviews...</h2>
+            </div>
+
+        </div>
     </div>
-
-
 </div>
-
 
 @code {
 
