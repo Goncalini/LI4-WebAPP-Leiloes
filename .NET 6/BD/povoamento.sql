@@ -19,13 +19,13 @@ VALUES
 (5, 'Video Jogos');
 
 -- Povoar a tabela Leil�o
-INSERT INTO [dbo].[Leil�o] ([Leil�oID], [Tipo do Leil�o], [Estado], [Nome do produto], [Categoria do produto], [Marca do Produto], [Username do Vendedor], [Descri��o], [TempoLimite], [Valor inicial], [Data de termino])
+INSERT INTO [dbo].[Leil�o] ([Leil�oID], [Tipo do Leil�o], [Estado], [Nome do produto], [Categoria do produto], [Marca do Produto], [Username do Vendedor], [Descri��o], [Valor inicial], [Data de termino])
 VALUES
-(1, 'Ingl�s', 'Novo', 'Action Figura Spider-Man', 1, 0x456C656374726F6E696373, 'joaosilva', 'Figura super rara', '02:00:00', 1000.00, '2024-02-10 15:00:00'),
-(2, 'Japon�s', 'Muito Bom', 'Edi��o Rara de Batman: The Dark Knight Returns', 2, 0x4265727279, 'mariasantos', 'Edi��o Rara de Batman: The Dark Knight Returns', '03:30:00', 200.00, '2024-02-15 18:30:00'),
-(3, 'Ingl�s', 'Satisfaz', 'Harry Potter e a Pedra Filosofal', 3, 0x4861727279506F74746572, 'carlosfernandes', 'Livro de fic��o de J.K. Rowling', '01:45:00', 20.00, '2024-02-05 12:45:00'),
-(4, 'Japon�s', 'Novo', 'Cluedo De Fortnite', 4, 0x4E6174757A7A69, 'anapereira', 'Jogo super raro tem�tico', '04:15:00', 50000.00, '2024-02-20 20:15:00'),
-(5, 'Ingl�s', 'Novo', 'Clash Royale Super Deluxe', 5, 0x5370656369616C697A6564, 'pedrooliveira', 'Jogo super exclusivo', '02:30:00', 300.00, '2024-02-08 14:30:00');
+(1, 'Ingl�s', 'Novo', 'Action Figura Spider-Man', 1, 0x456C656374726F6E696373, 'joaosilva', 'Figura super rara', 1000.00, '2024-02-10 15:00:00'),
+(2, 'Japon�s', 'Muito Bom', 'Edi��o Rara de Batman: The Dark Knight Returns', 2, 0x4265727279, 'mariasantos', 'Edi��o Rara de Batman: The Dark Knight Returns', 200.00, '2024-02-15 18:30:00'),
+(3, 'Ingl�s', 'Satisfaz', 'Harry Potter e a Pedra Filosofal', 3, 0x4861727279506F74746572, 'carlosfernandes', 'Livro de fic��o de J.K. Rowling', 20.00, '2024-02-05 12:45:00'),
+(4, 'Japon�s', 'Novo', 'Cluedo De Fortnite', 4, 0x4E6174757A7A69, 'anapereira', 'Jogo super raro tem�tico', 50000.00, '2024-02-20 20:15:00'),
+(5, 'Ingl�s', 'Novo', 'Clash Royale Super Deluxe', 5, 0x5370656369616C697A6564, 'pedrooliveira', 'Jogo super exclusivo', 300.00, '2024-02-08 14:30:00');
 
 -- Povoar a tabela Carregamentos
 INSERT INTO [dbo].[Carregamentos] ([Username], [Data], [Valor], [IDCarregamento])
@@ -64,7 +64,7 @@ DROP TABLE IF EXISTS [dbo].[Carregamentos];
 DROP TABLE IF EXISTS [dbo].[Categoria];
 
 -- Descartar a tabela "Foto do produto"
-DROP TABLE IF EXISTS [dbo].[Foto do produto];
+DROP TABLE IF EXISTS [dbo].[FotoDoProduto];
 
 -- Descartar a tabela Leil�o
 DROP TABLE IF EXISTS [dbo].[Leil�o];

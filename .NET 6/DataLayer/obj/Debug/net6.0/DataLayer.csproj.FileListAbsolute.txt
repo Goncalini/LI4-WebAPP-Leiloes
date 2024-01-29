@@ -56,3 +56,18 @@ C:\Users\gonca\OneDrive\Ambiente de Trabalho\UNI\3 ano\LI4\Bellisimos colectible
 C:\Users\gonca\OneDrive\Ambiente de Trabalho\UNI\3 ano\LI4\Bellisimos colectibles\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.pdb
 C:\Users\gonca\OneDrive\Ambiente de Trabalho\UNI\3 ano\LI4\Bellisimos colectibles\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache
 C:\Users\gonca\OneDrive\Ambiente de Trabalho\UNI\3 ano\LI4\Bellisimos colectibles\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\bin\Debug\net6.0\DataLayer.runtimeconfig.json
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\bin\Debug\net6.0\DataLayer.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.sourcelink.json
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll

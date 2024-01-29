@@ -19,72 +19,129 @@
 	<InputText id="Username" @bind-Value="@user.Username"></InputText>
 	<label for="Email">Email</label>
 	<newline>
-	<InputText id="Email" @bind-Value="@user.email"></InputText>
-	<label for="Phone">Telemovel</label>
-	<InputText id="Phone" @bind-Value="@user.contacto"></InputText>
-	<label for="morada">Morada</label>
-	<InputText id="morada" @bind-Value="@user.morada"></InputText>
-	<label for="password">Password</label>
-	<InputText id="password" @bind-Value="@user.password"></InputText>
+		<InputText id="Email" @bind-Value="@user.email"></InputText>
+		<label for="Phone">Telemovel</label>
+		<InputText id="Phone" @bind-Value="@user.contacto"></InputText>
+		<label for="morada">Morada</label>
+		<InputText id="morada" @bind-Value="@user.morada"></InputText>
+		<label for="password">Password</label>
+		<InputText id="password" @bind-Value="@user.password"></InputText>
 	</newline>
-	<button type="submit" class="btn-primary">Create</button>
+	<button type="submit" class="btn-primary">CreateUser</button>
 </EditForm>
 
-<EditForm Model="@user" OnValidSubmit="HandleSubmit">
-	<label for="Nome">Nome</label>
-	<InputText id="Nome" @bind-Value="@user.primeiroNome"></InputText>
-	<label for="Segundo">Segundo</label>
-	<InputText id="Segundo" @bind-Value="@user.segundoNome"></InputText>
-	<label for="Username">Username</label>
-	<InputText id="Username" @bind-Value="@user.Username"></InputText>
-	<label for="Email">Email</label>
-	<newline>
-	<InputText id="Email" @bind-Value="@user.email"></InputText>
-	<label for="Phone">Telemovel</label>
-	<InputText id="Phone" @bind-Value="@user.contacto"></InputText>
-	<label for="morada">Morada</label>
-	<InputText id="morada" @bind-Value="@user.morada"></InputText>
-	<label for="password">Password</label>
-	<InputText id="password" @bind-Value="@user.password"></InputText>
-	</newline>
-	<button type="submit" class="btn-primary">Create</button>
+<EditForm Model="@lao" OnValidSubmit="HandleSubmit3">
+	<label for="Id">Id</label>
+	<InputNumber id="Id" @bind-Value="@lao.LeilãoID"></InputNumber>
+	<label for="Segundo">Preco Init</label>
+	<InputNumber id="Segundo" @bind-Value="@lao.preco_inicial"></InputNumber>
+	<label for="Email">Tipo</label>
+	<InputText id="Email" @bind-Value="@lao.tipo"></InputText>
+	<label for="a">vendedor</label>
+	<label for="Username">Tempo Lim</label>
+	<InputDate id="Username" @bind-Value="@lao.dataDeTermino"></InputDate>
+	<InputText id="a" @bind-Value="@lao.vendedorId"></InputText>
+	<label for="b">Categoria</label>
+	<InputNumber id="b" @bind-Value="@lao.idCategoria"></InputNumber>
+	<label for="c">Nome Prod</label>
+	<InputText id="c" @bind-Value="@lao.nome"></InputText>
+	<label for="d">Marca</label>
+	<InputText id="d" @bind-Value="@lao.marca"></InputText>
+	<label for="e">Descricao</label>
+	<InputTextArea id="e" @bind-Value="@lao.descricao"></InputTextArea>
+	<label for="f">Estado</label>
+	<InputText id="f" @bind-Value="@lao.estado"></InputText>
+
+	<button type="submit" class="btn-primary">CreateLeilao</button>
 </EditForm>
 
-<EditForm Model="@licit" OnValidSubmit="HandleSubmit">
-	<label for="Nome">Nome</label>
-	<InputText id="Nome" @bind-Value="@user.primeiroNome"></InputText>
-	<label for="Segundo">Segundo</label>
-	<InputText id="Segundo" @bind-Value="@user.segundoNome"></InputText>
-	<label for="Username">Username</label>
-	<InputText id="Username" @bind-Value="@user.Username"></InputText>
-	<label for="Email">Email</label>
-	<newline>
-	<InputText id="Email" @bind-Value="@user.email"></InputText>
-	<label for="Phone">Telemovel</label>
-	<InputText id="Phone" @bind-Value="@user.contacto"></InputText>
-	<label for="morada">Morada</label>
-	<InputText id="morada" @bind-Value="@user.morada"></InputText>
-	<label for="password">Password</label>
-	<InputText id="password" @bind-Value="@user.password"></InputText>
-	</newline>
-	<button type="submit" class="btn-primary">Create</button>
+<EditForm Model="@licit" OnValidSubmit="HandleSubmit2">
+	<label for="Nome">Numero</label>
+	<InputNumber id="Nome" @bind-Value="@licit.LicitaçãoID"></InputNumber>
+	<label for="Segundo">User Username</label>
+	<InputText id="Segundo" @bind-Value="@licit.userUsername"></InputText>
+	<label for="Username">Leilao</label>
+	<InputNumber id="Username" @bind-Value="@licit.iDLeilao"></InputNumber>
+	<label for="Email">Valor</label>
+	<InputNumber id="Email" @bind-Value="@licit.valor"></InputNumber>
+	<button type="submit" class="btn-primary">CreateLicitacao</button>
 </EditForm>
 
-@code{
+<EditForm Model="@classi" OnValidSubmit="HandleSubmit5">
+	<label for="Nome">Id</label>
+	<InputNumber id="Nome" @bind-Value="@classi.AvaliaçãoID"></InputNumber>
+	<label for="Segundo">User Username</label>
+	<InputText id="Segundo" @bind-Value="@classi.usernameUser"></InputText>
+	<label for="Username">CLiente</label>
+	<InputText id="Username" @bind-Value="@classi.usernameCliente"></InputText>
+	<label for="Email">Aval</label>
+	<InputNumber id="Email" @bind-Value="@classi.aval"></InputNumber>
+	<label for="a">Coment</label>
+	<InputTextArea id="a" @bind-Value="@classi.comentario"></InputTextArea>
+	<button type="submit" class="btn-primary">CreateClassificacao</button>
+</EditForm>
+
+<EditForm Model="@cate" OnValidSubmit="HandleSubmit4">
+	<label for="Nome">Id</label>
+	<InputNumber id="Nome" @bind-Value="@cate.ID"></InputNumber>
+	<label for="Segundo">Nome</label>
+	<InputText id="Segundo" @bind-Value="@cate.nome"></InputText>
+	<button type="submit" class="btn-primary">CreateCategoria</button>
+</EditForm>
+
+<EditForm Model="@carrega" OnValidSubmit="HandleSubmit6">
+	<label for="Nome">Id</label>
+	<InputNumber id="Nome" @bind-Value="@carrega.IDCarregamento"></InputNumber>
+	<label for="Segundo">Username</label>
+	<InputText id="Segundo" @bind-Value="@carrega.Username"></InputText>
+	<label for="Username">Data</label>
+	<InputDate id="Username" @bind-Value="@carrega.Data"></InputDate>
+	<label for="Email">Valor</label>
+	<InputNumber id="Email" @bind-Value="@carrega.valor"></InputNumber>
+	<button type="submit" class="btn-primary">CreateCarregamento</button>
+</EditForm>
+
+@code {
 	Utilizador user = new Utilizador();
 	Licitacao licit = new Licitacao();
 	Leilao lao = new Leilao();
-	Classificacao class = new Classificacao();
+	Classificacao classi = new Classificacao();
 	Categoria cate = new Categoria();
 	Carregamento carrega = new Carregamento();
 
-	public void HandleSubmit(EditContext editContext){
+	public void HandleSubmit(EditContext editContext)
+	{
 		var newCliente = (Utilizador)editContext.Model;
 		userService.AddUpdate(newCliente);
 	}
 
-		public void HandleSubmit2(EditContext editContext){
+	public void HandleSubmit2(EditContext editContext)
+	{
 		var newLicitacao = (Licitacao)editContext.Model;
-		licitService.AddUpdate(newLicitacao);
+		licitService.AddLicitacao(newLicitacao);
+	}
+
+	public void HandleSubmit3(EditContext editContext)
+	{
+		var newCliente = (Leilao)editContext.Model;
+		leilaoService.AddLeilao(newCliente);
+	}
+
+	public void HandleSubmit4(EditContext editContext)
+	{
+		var newLicitacao = (Categoria)editContext.Model;
+		categoriaService.AddCategoria(newLicitacao);
+	}
+
+	public void HandleSubmit5(EditContext editContext)
+	{
+		var newCliente = (Classificacao)editContext.Model;
+		classService.AddClassificacao(newCliente);
+	}
+
+	public void HandleSubmit6(EditContext editContext)
+	{
+		var newLicitacao = (Carregamento)editContext.Model;
+		carregamentoService.AddCarregamento(newLicitacao);
 	}
 }

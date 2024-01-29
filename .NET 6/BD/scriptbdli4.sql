@@ -155,7 +155,6 @@ CREATE TABLE [dbo].[Leilão](
 	[Marca do Produto] [varbinary](20) NOT NULL,
 	[Username do Vendedor] [varchar](50) NOT NULL,
 	[Descrição] [text] NOT NULL,
-	[TempoLimite] [time](7) NOT NULL,
 	[Valor inicial] [float] NOT NULL,
 	[Data de termino] [datetime] NOT NULL,
  CONSTRAINT [PK_Leilão] PRIMARY KEY CLUSTERED 

@@ -42,7 +42,6 @@ namespace DataLayer.Models
                 entity.Property(e => e.marca).IsRequired().HasColumnName("Marca do Produto").HasColumnType("varbinary(20)");
                 entity.Property(e => e.vendedorId).IsRequired().HasColumnName("Username do Vendedor").HasColumnType("varchar(50)");
                 entity.Property(e => e.descricao).IsRequired().HasColumnName("Descrição").HasColumnType("text");
-                entity.Property(e => e.tempo_limite).IsRequired().HasColumnName("TempoLimite").HasColumnType("time(7)");
                 entity.Property(e => e.preco_inicial).IsRequired().HasColumnName("Valor Inicial").HasColumnType("float");
                 entity.Property(e => e.dataDeTermino).IsRequired().HasColumnName("Data de termino").HasColumnType("datetime");
             });

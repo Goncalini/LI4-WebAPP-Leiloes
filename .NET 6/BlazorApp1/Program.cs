@@ -17,7 +17,12 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddTransient<UtilizadorService>();
-builder.Services.AddSingleton<UtilizadorService>();
+builder.Services.AddTransient<LicitacaoService>();
+builder.Services.AddTransient<LeilaoService>();
+builder.Services.AddTransient<FotoService>();
+builder.Services.AddTransient<ClassificacaoService>();
+builder.Services.AddTransient<CategoriaService>();
+builder.Services.AddTransient<CarregamentoService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

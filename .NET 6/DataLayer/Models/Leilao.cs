@@ -13,11 +13,7 @@ namespace DataLayer.Models
 
         public double preco_inicial {  get; set; }
 
-        public TimeSpan tempo_limite { get; set; }
-
         public string tipo { get; set; }
-
-        public int maior_licit { get; set; } 
 
         public DateTime dataDeTermino { get; set; }
 
