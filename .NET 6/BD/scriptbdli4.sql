@@ -84,20 +84,20 @@ ALTER DATABASE [LI4DB] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_POL
 GO
 USE [LI4DB]
 GO
-/****** Object:  Table [dbo].[Avaliação]    Script Date: 26/01/2024 16:51:15 ******/
+/****** Object:  Table [dbo].[Avaliacao]    Script Date: 26/01/2024 16:51:15 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[Avaliação](
-	[AvaliaçãoID] [int] NOT NULL,
+CREATE TABLE [dbo].[Avaliacao](
+	[AvaliacaoID] [int] NOT NULL,
 	[UsernameClient] [varchar](50) NOT NULL,
 	[UsernameUser] [varchar](50) NOT NULL,
-	[Avaliação] [int] NOT NULL,
+	[Avaliacao] [int] NOT NULL,
 	[Comentario] [text] NULL,
- CONSTRAINT [PK_Avaliação] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Avaliacao] PRIMARY KEY CLUSTERED 
 (
-	[AvaliaçãoID] ASC
+	[AvaliacaoID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
@@ -137,46 +137,46 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[FotoDoProduto](
-	[IDLeilão] [int] NOT NULL,
+	[IDLeilao] [int] NOT NULL,
 	[Foto] [image] NOT NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Leilão]    Script Date: 26/01/2024 16:51:15 ******/
+/****** Object:  Table [dbo].[Leilao]    Script Date: 26/01/2024 16:51:15 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[Leilão](
-	[LeilãoID] [int] NOT NULL,
-	[Tipo do Leilão] [varchar](10) NOT NULL,
+CREATE TABLE [dbo].[Leilao](
+	[LeilaoID] [int] NOT NULL,
+	[Tipo do Leilao] [varchar](10) NOT NULL,
 	[Estado] [varchar](10) NOT NULL,
 	[Nome do produto] [varchar](50) NOT NULL,
 	[Categoria do produto] [int] NOT NULL,
 	[Marca do Produto] [varbinary](20) NOT NULL,
 	[Username do Vendedor] [varchar](50) NOT NULL,
-	[Descrição] [text] NOT NULL,
+	[Descricao] [text] NOT NULL,
 	[Valor inicial] [float] NOT NULL,
 	[Data de termino] [datetime] NOT NULL,
- CONSTRAINT [PK_Leilão] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Leilao] PRIMARY KEY CLUSTERED 
 (
-	[LeilãoID] ASC
+	[LeilaoID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Licitação]    Script Date: 26/01/2024 16:51:15 ******/
+/****** Object:  Table [dbo].[Licitacao]    Script Date: 26/01/2024 16:51:15 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[Licitação](
-	[LicitaçãoID] [int] NOT NULL,
+CREATE TABLE [dbo].[Licitacao](
+	[LicitacaoID] [int] NOT NULL,
 	[Tempo] [datetime] NOT NULL,
 	[Valor] [float] NOT NULL,
 	[UserUsername] [varchar](50) NOT NULL,
-	[IDLeilão] [int] NOT NULL,
- CONSTRAINT [PK_Licitação] PRIMARY KEY CLUSTERED 
+	[IDLeilao] [int] NOT NULL,
+ CONSTRAINT [PK_Licitacao] PRIMARY KEY CLUSTERED 
 (
-	[LicitaçãoID] ASC
+	[LicitacaoID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -191,7 +191,7 @@ CREATE TABLE [dbo].[Utilizador](
 	[Segundo Nome] [varchar](50) NOT NULL,
 	[Email] [varchar](30) NOT NULL,
 	[Password] [varchar](30) NOT NULL,
-	[Contacto Telefónico] [varchar](9) NOT NULL,
+	[Contacto Telefonico] [varchar](9) NOT NULL,
 	[Morada] [varchar](50) NOT NULL,
 	[Saldo] [float] NOT NULL,
 	[Saldo Fantasma] [float] NOT NULL,
@@ -201,40 +201,40 @@ CREATE TABLE [dbo].[Utilizador](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-ALTER TABLE [dbo].[Avaliação]  WITH CHECK ADD  CONSTRAINT [FK_Avaliação_Utilizador] FOREIGN KEY([UsernameClient])
+ALTER TABLE [dbo].[Avaliacao]  WITH CHECK ADD  CONSTRAINT [FK_Avaliacao_Utilizador] FOREIGN KEY([UsernameClient])
 REFERENCES [dbo].[Utilizador] ([Username])
 GO
-ALTER TABLE [dbo].[Avaliação] CHECK CONSTRAINT [FK_Avaliação_Utilizador]
+ALTER TABLE [dbo].[Avaliacao] CHECK CONSTRAINT [FK_Avaliacao_Utilizador]
 GO
-ALTER TABLE [dbo].[Avaliação]  WITH CHECK ADD  CONSTRAINT [FK_Avaliação_Utilizador1] FOREIGN KEY([UsernameUser])
+ALTER TABLE [dbo].[Avaliacao]  WITH CHECK ADD  CONSTRAINT [FK_Avaliacao_Utilizador1] FOREIGN KEY([UsernameUser])
 REFERENCES [dbo].[Utilizador] ([Username])
 GO
-ALTER TABLE [dbo].[Avaliação] CHECK CONSTRAINT [FK_Avaliação_Utilizador1]
+ALTER TABLE [dbo].[Avaliacao] CHECK CONSTRAINT [FK_Avaliacao_Utilizador1]
 GO
 ALTER TABLE [dbo].[Carregamentos]  WITH CHECK ADD  CONSTRAINT [FK_Carregamentos_Utilizador] FOREIGN KEY([Username])
 REFERENCES [dbo].[Utilizador] ([Username])
 GO
 ALTER TABLE [dbo].[Carregamentos] CHECK CONSTRAINT [FK_Carregamentos_Utilizador]
 GO
-ALTER TABLE [dbo].[FotoDoProduto]  WITH CHECK ADD  CONSTRAINT [FK_Foto do produto_Leilão] FOREIGN KEY([IDLeilão])
-REFERENCES [dbo].[Leilão] ([LeilãoID])
+ALTER TABLE [dbo].[FotoDoProduto]  WITH CHECK ADD  CONSTRAINT [FK_Foto do produto_Leilao] FOREIGN KEY([IDLeilao])
+REFERENCES [dbo].[Leilao] ([LeilaoID])
 GO
-ALTER TABLE [dbo].[FotoDoProduto] CHECK CONSTRAINT [FK_Foto do produto_Leilão]
+ALTER TABLE [dbo].[FotoDoProduto] CHECK CONSTRAINT [FK_Foto do produto_Leilao]
 GO
-ALTER TABLE [dbo].[Leilão]  WITH CHECK ADD  CONSTRAINT [FK_Leilão_Categoria] FOREIGN KEY([Categoria do produto])
+ALTER TABLE [dbo].[Leilao]  WITH CHECK ADD  CONSTRAINT [FK_Leilao_Categoria] FOREIGN KEY([Categoria do produto])
 REFERENCES [dbo].[Categoria] ([ID])
 GO
-ALTER TABLE [dbo].[Leilão] CHECK CONSTRAINT [FK_Leilão_Categoria]
+ALTER TABLE [dbo].[Leilao] CHECK CONSTRAINT [FK_Leilao_Categoria]
 GO
-ALTER TABLE [dbo].[Licitação]  WITH CHECK ADD  CONSTRAINT [FK_Licitação_Leilão] FOREIGN KEY([IDLeilão])
-REFERENCES [dbo].[Leilão] ([LeilãoID])
+ALTER TABLE [dbo].[Licitacao]  WITH CHECK ADD  CONSTRAINT [FK_Licitacao_Leilao] FOREIGN KEY([IDLeilao])
+REFERENCES [dbo].[Leilao] ([LeilaoID])
 GO
-ALTER TABLE [dbo].[Licitação] CHECK CONSTRAINT [FK_Licitação_Leilão]
+ALTER TABLE [dbo].[Licitacao] CHECK CONSTRAINT [FK_Licitacao_Leilao]
 GO
-ALTER TABLE [dbo].[Licitação]  WITH CHECK ADD  CONSTRAINT [FK_Licitação_Utilizador] FOREIGN KEY([UserUsername])
+ALTER TABLE [dbo].[Licitacao]  WITH CHECK ADD  CONSTRAINT [FK_Licitacao_Utilizador] FOREIGN KEY([UserUsername])
 REFERENCES [dbo].[Utilizador] ([Username])
 GO
-ALTER TABLE [dbo].[Licitação] CHECK CONSTRAINT [FK_Licitação_Utilizador]
+ALTER TABLE [dbo].[Licitacao] CHECK CONSTRAINT [FK_Licitacao_Utilizador]
 GO
 USE [master]
 GO

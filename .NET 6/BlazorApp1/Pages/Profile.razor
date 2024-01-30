@@ -1,6 +1,15 @@
 ﻿@page "/profile"
 @layout MainLayoutWnavbar
-
+@using DataLayer.Services
+@using DataLayer.Models
+@inject UtilizadorService userService;
+@inject LicitacaoService licitService;
+@inject LeilaoService leilaoService;
+@inject ClassificacaoService classService;
+@inject CategoriaService categoriaService;
+@inject CarregamentoService carregamentoService;
+@inject FotoService fotoService;
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
 <div class="min-h-screen bg-gray-200 w-full flex-col">
 
@@ -18,9 +27,9 @@
 
             <!--trocar para ir buscar estas infos-->
             <div class="my-10 justify-start">
-                <p class="mt-8 text-5xl font-light">nome</p>
-                <p class="text-2xl font-light">avaliacao</p>
-                <p class="text-2xl font-extralight">username</p>
+        	    <p class="mt-8 text-5xl font-extralight">@user.nome</p>
+        	    <p class="text-2xl font-extralight">avaliacao</p>
+        	    <p class="text-2xl font-thin">@user.Username</p>
             </div>
 
         </div>
@@ -110,8 +119,20 @@
     </div>
 </div>
 
+<!--Mostra aqui como se fazem acessos a valores a entidades da BD basically-->
+@foreach(var lei in leiloes){
+	<p>@lei.LeilãoID | @lei.preco_inicial | @lei.vendedorId</p>
+}
 
 @code {
+	List<Leilao> leiloes = new List<Leilao>();
+	Utilizador user = new Utilizador();
+	const string noteKey = "note";
 
+	protected override async Task OnInitializedAsync(){
+    	leiloes = leilaoService.GetAll();
+    	user = await localStorage.GetItemAsync<Utilizador>(noteKey);
+	}
 }
+
 

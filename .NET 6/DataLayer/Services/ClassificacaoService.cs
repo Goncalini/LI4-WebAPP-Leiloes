@@ -26,9 +26,9 @@ namespace DataLayer.Services
                 int id = classi.AvaliaçãoID;
                 Classificacao lei = FindById(id);
                 if (lei == null)
-                    context.Avaliação.Add(classi);
+                    context.Avaliacao.Add(classi);
                 else
-                    context.Avaliação.Update(classi);
+                    context.Avaliacao.Update(classi);
                 context.SaveChanges();
             }
         }
@@ -37,9 +37,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var classi = _context.Avaliação.Find(id);
+                var classi = _context.Avaliacao.Find(id);
 
-                _context.Avaliação.Remove(classi);
+                _context.Avaliacao.Remove(classi);
                 _context.SaveChanges();
             }
 
@@ -48,13 +48,13 @@ namespace DataLayer.Services
         public Classificacao FindById(int id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.Avaliação.SingleOrDefault(x => x.AvaliaçãoID == id);
+                return _context.Avaliacao.SingleOrDefault(x => x.AvaliaçãoID == id);
         }
 
         public List<Classificacao> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.Avaliação.ToList();
+                return _context.Avaliacao.ToList();
         }
 
         public float GetMediaUser(string username)
@@ -63,14 +63,15 @@ namespace DataLayer.Services
             var all = new List<Classificacao>();
             var sum = 0;
             using (var _context = _dbContextFactory.CreateDbContext())
-                all = _context.Avaliação.ToList().FindAll(x => x.usernameUser == username);
+                all = _context.Avaliacao.ToList().FindAll(x => x.usernameUser == username);
 
             foreach (Classificacao item in all)
             {
                 sum += item.aval;
             }
-
-            return sum / all.Count();
+            if(all.Count > 0)
+                return sum / all.Count();
+            return 0;
         }
     }
 }

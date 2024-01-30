@@ -13,7 +13,5 @@ namespace DataLayer.Models
 
         public string FotoPath { get; set; }
 
-        public Leilao leilao { get; set; }
-
     }
 }

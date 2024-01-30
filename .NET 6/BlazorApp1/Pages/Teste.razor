@@ -7,14 +7,14 @@
 @inject ClassificacaoService classService;
 @inject CategoriaService categoriaService;
 @inject CarregamentoService carregamentoService;
+@inject FotoService fotoService;
+
 
 <PageTitle>Teste</PageTitle>
 
 <EditForm Model="@user" OnValidSubmit="HandleSubmit">
 	<label for="Nome">Nome</label>
-	<InputText id="Nome" @bind-Value="@user.primeiroNome"></InputText>
-	<label for="Segundo">Segundo</label>
-	<InputText id="Segundo" @bind-Value="@user.segundoNome"></InputText>
+	<InputText id="Nome" @bind-Value="@user.nome"></InputText>
 	<label for="Username">Username</label>
 	<InputText id="Username" @bind-Value="@user.Username"></InputText>
 	<label for="Email">Email</label>
@@ -101,6 +101,12 @@
 	<button type="submit" class="btn-primary">CreateCarregamento</button>
 </EditForm>
 
+<EditForm Model = "@foto" OnValidSubmit="FotoUploaded">
+	<label for="File">Select your file</label>
+	<InputFile id="File" @bind-Value="foto.FotoPath"></InputFile>
+	<button type="submit" class="btn-primary">CreateFoto</button>
+</EditForm>
+
 @code {
 	Utilizador user = new Utilizador();
 	Licitacao licit = new Licitacao();
@@ -108,6 +114,7 @@
 	Classificacao classi = new Classificacao();
 	Categoria cate = new Categoria();
 	Carregamento carrega = new Carregamento();
+	Foto foto = new Foto();
 
 	public void HandleSubmit(EditContext editContext)
 	{
@@ -143,5 +150,10 @@
 	{
 		var newLicitacao = (Carregamento)editContext.Model;
 		carregamentoService.AddCarregamento(newLicitacao);
+	}
+
+	public void FotoUploaded(EditContext editContext){
+		var newFoto = (Foto)editContext.Model;
+		fotoService.AddFoto(newFoto);
 	}
 }

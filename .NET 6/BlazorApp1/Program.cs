@@ -4,6 +4,7 @@ using DataLayer.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using DataLayer.Models;
+using Blazored.LocalStorage;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Default")
@@ -24,6 +25,7 @@ builder.Services.AddTransient<ClassificacaoService>();
 builder.Services.AddTransient<CategoriaService>();
 builder.Services.AddTransient<CarregamentoService>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddBlazoredLocalStorage();
 
 var app = builder.Build();
 

@@ -1,4 +1,7 @@
 ﻿@page "/register"
+@using DataLayer.Services
+@using DataLayer.Models
+@inject UtilizadorService userService;
 
 <PageTitle>Register</PageTitle>
 
@@ -7,37 +10,50 @@
     <div class="bg-white h-[530px] w-[400px]">
         <h1 class="pt-10 pb-1 text-center font-black text-3xl">Create Account</h1>
 
+    <EditForm Model="@user" OnValidSubmit="HandleSubmit">
         <div class="space-y-2 m-4">
-            <input type="text" id="name" placeholder="First and Last Name"
+            <input type="text" id="name" placeholder="First and Last Name" @bind="@user.nome"
                    class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
 
-            <input type="text" id="username" placeholder="Username"
+            <input type="text" id="username" placeholder="Username" @bind="@user.Username"
                    class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
 
-            <input type="email" id="email" placeholder="Email"
+            <input type="email" id="email" placeholder="Email" @bind="@user.email"
                    class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
 
-            <input type="tel" id="tele" placeholder="Phone Number"
+            <input type="tel" id="tele" placeholder="Phone Number" @bind="@user.contacto"
                    class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
 
-            <input type="text" id="morada" placeholder="Address"
+            <input type="text" id="morada" placeholder="Address" @bind="@user.morada"
                    class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
 
-            <input type="password" id="password" placeholder="Password"
+            <input type="password" id="password" placeholder="Password" @bind="@user.password"
                    class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
 
-            <input type="password" id="confirma_password"
+            <input type="password" id="confirma_password" @bind="password"
                    placeholder="Repeat Password" class="w-full p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-3xl block dark:text-black" required>
         </div>
 
         <div class="flex justify-end mr-6">
             <button type="submit" class="px-10 py-2 bg-red-500 rounded-3xl shadow text-white text-center text-lg font-semibold justify-items-end items-center inline-flex hover:bg-red-400">Create</button>
         </div>
+    </EditForm>
 
     </div>
 </div>
 
 @code {
+
+    Utilizador user = new Utilizador();
+    private string password {get;set;}
+
+    public void HandleSubmit(EditContext editContext)
+	{
+        var newCliente = (Utilizador)editContext.Model;
+		if(password == user.password)
+            //Error Handling
+        userService.AddUpdate(newCliente);
+	}
 
 }
 

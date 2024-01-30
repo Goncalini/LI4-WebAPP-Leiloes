@@ -478,3 +478,4 @@ C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET
 C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.pdb
 C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.genruntimeconfig.cache
 C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\ref\BlazorApp1.dll
+C:\Users\pedro\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Blazored.LocalStorage.dll
