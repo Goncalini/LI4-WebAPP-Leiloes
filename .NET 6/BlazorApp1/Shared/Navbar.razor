@@ -1,18 +1,22 @@
-﻿<div class="flex w-full bg-[#C9302A] justify-between">
+﻿<div class="flex w-full bg-red-500 justify-between">
     <div class="flex">
-        <a href="/create">
+        <a href="/search">
             <img class="p-0 ml-3 w-15 h-16 my-2" src="assets/images/logo.png" />
         </a>
 
         <select id="filtro"
                 class="py-1 ml-5 px-2 my-3 rounded-l-xl border-3 bg-gray-200 border-r-gray-200">
             <option value="" selected>All</option>
-            <option value="1">Category</option>
-            <option value="2">Brand</option>
-            <option value="3">Auction Type</option>
+            <option value="1">Action/Vinyl Figures</option>
+            <option value="2">Comic</option>
+            <option value="3">Movies and Series</option>
+            <option value="4">Board Games</option>
+            <option value="5">Video Games</option>
         </select>
         <input @bind="@searchTerm" placeholder="Search product" type="text" class="py-1 px-2 my-3 rounded-r-xl" />
     </div>
+
+
     <div class="flex space-x-6 py-4 h-full pr-4 justify-center align-center">
         @foreach (KeyValuePair<string, string> link in navLinks)
         {

@@ -4,25 +4,42 @@
 
 <div class="min-h-screen bg-gray-200 w-full flex-col">
 
-    <div class="gap-2 flex justify-start">
+    <div class="flex justify-between">
+        <div class="gap-2 flex justify-start">
 
-        <div class="my-8 ml-20 mr-8 w-1/12">
-            <img class="my-8 w-11/12" src="/assets/images/user3.svg">
+            <div class="my-8 ml-20 mr-8 w-30">
+                <img class="my-8" src="/assets/images/user3.svg">
 
-            <a href="/editAccount" class="bg-red-500 rounded-2xl shadow py-3 px-12 text-white text-center text-lg font-bold justify-items-end items-center hover:bg-red-400">
-                Edit
-            </a>
+                <a href="/editAccount" class="bg-red-500 rounded-2xl shadow py-3 px-12 text-white text-center text-lg font-bold justify-items-end items-center hover:bg-red-400">
+                    Edit
+                </a>
+
+            </div>
+
+            <!--trocar para ir buscar estas infos-->
+            <div class="my-10 justify-start">
+                <p class="mt-8 text-5xl font-light">nome</p>
+                <p class="text-2xl font-light">avaliacao</p>
+                <p class="text-2xl font-extralight">username</p>
+            </div>
 
         </div>
 
-        <!--trocar para ir buscar estas infos-->
-        <div class="my-10 justify-start">
-            <p class="mt-8 text-5xl font-light">nome</p>
-            <p class="text-2xl font-light">avaliacao</p>
-            <p class="text-2xl font-extralight">username</p>
+        <div class="my-20 mr-24">
+            <div class="py-2.5 px-20 bg-red-500 w-64 h-14 rounded-t-2xl font-bold text-3xl text-white shadow">Saldo</div>
+            <div class="py-3 px-1 bg-white w-64 h-16 rounded-b-2xl text-xl shadow font-bold items-center flex justify-around">
+                <!--ir buscar o valor saldo da conta-->
+                <p class="">
+                    11.95€
+                </p>
+                <a href="/charge" class="py-1 px-2 rounded-lg bg-gray-200 hover:bg-gray-300">+ Add</a>
+            </div>
         </div>
 
     </div>
+
+
+
     <!--adicionar saldo-->
     <!--Live Auctions-->
     <div class="mx-5">
@@ -31,13 +48,31 @@
 
         <!--adicionar formato leiloes-->
 
-        <div class="mx-14 flex justify-center">
-            <!--formato de uma avaliação apenas!!! ALTERAR DPS meter aqui um for each-->
+        <div class="space-y-10 mx-14 my-10 flex flex-wrap justify-center">
+
+            <!--formato de um leilao apenas!!! ALTERAR DPS meter aqui um for each-->
+            <div class=" bg-white h-54 w-10/12  relative bg-white rounded-[30px] shadow border">
+
+                <img class="my-1 w-17 h-56" src="assets/images/BELO.png" />
+
+                <p class="text-3xl left-[220px] top-[27px] absolute text-center font-bold font">Funko Pop! - Super Rare</p>
+                <p class="text-3xl left-[220px] top-[65px] absolute text-center font-thin ">Vinyl Figure</p>
+                <p class="text-3xl left-[220px] top-[135px] absolute text-center font-bold ">Condition: <span class="font-medium">Very Good</span> </p>
+                <p class="text-2xl left-[220px] top-[175px] absolute text-center font-extralight text-gray-500">Ze_Manel2004</p>
+
+                <div class="text-2xl w-[344px] left-[710px] top-[27px] absolute text-center text-black font-bold  ">Initial price: 20000€</div>
+                <p class="text-2xl w-72 left-[757px] top-[65px] absolute text-center text-black font-bold">Last Bid: 25000€</p>
+                <div class="text-2xl w-[323px] left-[728px] top-[170px] absolute text-center text-black font-bold">Ending in: 2:28:15</div>
+
+            </div>
+
 
             <div class="my-3">
                 <h2 class="text-xl font-medium">No more live auctions from this user...</h2>
             </div>
         </div>
+
+
     </div>
 
 
@@ -47,7 +82,10 @@
 
         <hr class="my-1 h-2 bg-black opacity-100 dark:opacity-50" />
 
+        <!--adicionar formato avaliacoes-->
+
         <div class="mx-14">
+
             <!--formato de uma avaliação apenas!!! ALTERAR DPS meter aqui um for each-->
             <div class="flex items-start gap-5">
                 <!--alterar a cor do mano-->
@@ -62,14 +100,18 @@
             </div>
             <hr class="h-2 bg-black opacity-100 dark:opacity-50" />
 
+
             <div class="mt-3 flex justify-center">
                 <h2 class="text-xl font-medium">This user doesn't have any more reviews...</h2>
             </div>
+
 
         </div>
     </div>
 </div>
 
+
 @code {
 
 }
+

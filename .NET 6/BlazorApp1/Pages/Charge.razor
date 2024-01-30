@@ -1,0 +1,43 @@
+﻿@page "/charge"
+@layout MainLayoutWnavbar
+
+<div class="fixed w-full min-h-screen bg-gray-200 flex justify-center">
+
+    <div class="mt-20 bg-white shadow h-[300px] w-[350px]">
+
+        <form>
+            <h1 class="pt-10 pb-1 text-center font-extrabold text-3xl">Charge Account</h1>
+
+            <div class="m-4">
+
+                <p class="my-2 font-semibold text-xl">
+                    Current balance:
+                    <span class="font-normal text-gray-600">
+                        <!--ir buscar valor-->
+                        xxxxx €
+                    </span>
+                </p>
+
+
+                <label for="quantia" class="my-1.5 text-xl font-semibold">Amount to add (€):</label>
+                <input type="number" id="quantia" placeholder="0.00" step="0.01" min="0"
+                       class="w-1/2 p-2.5 text-neutral-400 text-sm font-extralight shadow-sm border border-zinc-300 rounded-2xl dark:text-black" required>
+
+            </div>
+
+            <div class="flex justify-end mr-5 mt-2 gap-3 mt-4">
+                <button type="button" class="text-lg font-semibold">Cancel</button>
+
+                <button type="submit" class="px-10 py-2 bg-red-500 rounded-3xl shadow text-white text-center text-lg font-semibold justify-items-end items-center inline-flex hover:bg-red-400">Confirm</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+@code {
+
+}
+
