@@ -1,0 +1,100 @@
+﻿@page "/auctionclient"
+@layout MainLayoutWnavbar
+
+<div class="min-h-screen bg-gray-200 flex flex-wrap justify-center w-full">
+
+    <div class="w-3/4 p-2 border-r border-black border-solid">
+        <div class="h-1/6 p-2 space-y-2">
+            <h1 class="font-black text-3xl">Funk Pop! - Super Rare</h1>
+            <h2>Vinyl Figure</h2>
+            <p><b>Initial price:</b>20000€</p>
+            <p><b>Condition:</b>Very Good</p>
+        </div>
+        <div class="h-5/6 p-2 flex">
+            <div class="w-1/3">
+                <div class="h-1/2 p-2">
+                    <img class="my-1 ml-" src="/assets/images/BELO.png">
+                </div>
+                <div class="h-1/2 py-2 flex align-items-end justify-content">
+                    <img class="w-1/3" src="/assets/images/user3.svg">
+                    <div class="ml-3 text-2xl space-y-5">
+                        <p>Ze_Manel2000</p>
+                        <p>5 stars</p>
+                        <p>zemanel@mail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-2/3">
+                <div class="h-4/6 overflow-hidden my-5">
+                    <div class="border-b border-black border-solid -my-0">
+                        <h2 class="font-black text-xl "><b>Description</b></h2>
+                    </div>
+                    <div class="py-1">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+
+                <div class="h-2/6 flex align-items-center justify-center -my-32 ml-72">
+
+                    <button class="px-5 py-3 bg-red-600 rounded-l-2xl shadow-lg border border-red-800 text-xl text-white font-bold">Bid</button>
+                    <!--precisa de levar validação!!!!-->
+                    <input type="number" step="0.1" min="10" class="py-3 px-2 w-1/5 bg-white w-10 rounded-r-2xl" placeholder="Value(€)">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="w-1/4 p-4">
+        <div class="border-b border-black border-solid">
+            <h2 class="font-black text-2xl"><b>Ending in: 22:33:44</b></h2>
+        </div>
+
+        <div class="my-4 mx-7 h-5/6 bg-white rounded-2xl flex flex-col">
+            <div class="bg-red-500 rounded-t-2xl shadow h-1/6 text-white text-2xl font-bold justify-center items-center inline-flex">
+                Winning
+            </div>
+
+            <div class="bg-gray-300 rounded-b-2xl flex items-center shadow-xl h-1/6">
+                <div class="m-4 h-2/3 flex gap-4">
+                    <img class="w-2/12" src="/assets/images/user3.svg">
+
+                    <div class="text-xl">
+                        <p class="font-light">DumDum_jr</p>
+                        <p class="font-bold">valor maior€</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col-reverse mx-5 my-2 gap-2">
+                <!--leva aqui um foreach para cada licitação-->
+                <div class="h-2/3 flex gap-4">
+                    <img class="w-2/12" src="/assets/images/user3.svg">
+
+                    <div class="text-xl">
+                        <p class="font-light">DumDum_jr</p>
+                        <p class="font-bold">valor maior €</p>
+                    </div>
+                </div>
+
+                <div class="h-2/3 flex gap-4">
+                    <img class="w-2/12" src="/assets/images/user3.svg">
+
+                    <div class="text-xl">
+                        <p class="font-light">DumDum_jr</p>
+                        <p class="font-bold">valor menor €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+@code {
+
+}

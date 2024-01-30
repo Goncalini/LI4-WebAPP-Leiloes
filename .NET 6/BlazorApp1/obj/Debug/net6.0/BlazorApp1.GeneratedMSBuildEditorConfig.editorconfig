@@ -9,91 +9,99 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorApp1
 build_property.RootNamespace = BlazorApp1
-build_property.ProjectDir = C:\Users\gonca\OneDrive\Ambiente de Trabalho\UNI\3 ano\LI4\Bellisimos colectibles\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\
+build_property.ProjectDir = C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\gonca\OneDrive\Ambiente de Trabalho\UNI\3 ano\LI4\Bellisimos colectibles\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1
+build_property.MSBuildProjectDirectory = C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/App.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/AuctionLayout.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/AuctionLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXVjdGlvbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Charge.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/AuctionViewClientrazor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXVjdGlvblZpZXdDbGllbnRyYXpvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Charge.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcmdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Create.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/EditAccount.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/EditAccount.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFjY291bnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Home.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/icons/UserIcon.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/icons/UserIcon.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaWNvbnNcVXNlckljb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Profile.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Register.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Rating.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF0aW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Search.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Search.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/SignIn.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/SignIn.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbkluLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Teste.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Teste.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Shared/MainLayoutWnavbar.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Shared/MainLayoutWnavbar.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXRXbmF2YmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Shared/Navbar.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Shared/Navbar.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdmJhci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/_Imports.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Shared/MainLayout.razor]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-45rkf8v3vv
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Error.cshtml]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Login.cshtml]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/_Host.cshtml]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gonca/OneDrive/Ambiente de Trabalho/UNI/3 ano/LI4/Bellisimos colectibles/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/_Layout.cshtml]
+[C:/Users/marta/OneDrive/Ambiente de Trabalho/LEI/LI4/APP/WebAPP-Leiloes-Li4/.NET 6/BlazorApp1/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

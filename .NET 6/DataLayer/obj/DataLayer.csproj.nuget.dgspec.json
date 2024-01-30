@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {}
+    "C:\\Users\\marta\\OneDrive\\Ambiente de Trabalho\\LEI\\LI4\\APP\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\marta\\OneDrive\\Ambiente de Trabalho\\LEI\\LI4\\APP\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\marta\\OneDrive\\Ambiente de Trabalho\\LEI\\LI4\\APP\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\gonca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\UNI\\3 ano\\LI4\\Bellisimos colectibles\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
+        "projectPath": "C:\\Users\\marta\\OneDrive\\Ambiente de Trabalho\\LEI\\LI4\\APP\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\marta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marta\\OneDrive\\Ambiente de Trabalho\\LEI\\LI4\\APP\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gonca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
