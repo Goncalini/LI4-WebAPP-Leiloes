@@ -479,3 +479,15 @@ C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET
 C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.genruntimeconfig.cache
 C:\Users\marta\OneDrive\Ambiente de Trabalho\LEI\LI4\APP\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\ref\BlazorApp1.dll
 C:\Users\pedro\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Blazored.LocalStorage.dll
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.RazorAssemblyInfo.cache
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.RazorAssemblyInfo.cs
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.sourcelink.json
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.dll
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\refint\BlazorApp1.dll
+C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.pdb

@@ -1,5 +1,12 @@
 ﻿@page "/charge"
 @layout MainLayoutWnavbar
+@using DataLayer.Services
+@using DataLayer.Models
+@using Blazored.LocalStorage
+@inject NavigationManager navManager
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject UtilizadorService userService
+@inject CarregamentoService carrService
 
 <div class="fixed w-full min-h-screen bg-gray-200 flex justify-center">
 
@@ -38,6 +45,7 @@
 
 
 @code {
+    Utilizador user;
 
 }
 

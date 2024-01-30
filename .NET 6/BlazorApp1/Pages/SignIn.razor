@@ -2,8 +2,8 @@
 @using DataLayer.Services
 @using DataLayer.Models
 @using Blazored.LocalStorage
-@inject NavigationManager navManager
-@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject NavigationManager navManager;
+@inject Blazored.LocalStorage.ILocalStorageService localStorage;
 @inject UtilizadorService userService;
 
 <div class="min-h-screen bg-gray-200 flex justify-center items-center">
@@ -29,17 +29,18 @@
     private string username { get; set; }
     private string password { get; set; }
     const string noteKey = "note";
-    Utilizador noteContent;
+    private Utilizador noteContent;
+    string usernome;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if(firstRender){
-            noteContent = await localStorage.GetItemAsync<Utilizador>(noteKey);
+            usernome = await localStorage.GetItemAsync<string>("note");
             StateHasChanged();
         }
     }
 
-    public async void logIn()
+    public async Task logIn()
     {
 
         noteContent = userService.FindById(username);
@@ -55,7 +56,7 @@
             }
             else
             {
-                await localStorage.SetItemAsync(noteKey, noteContent);
+                await localStorage.SetItemAsync("note", usernome);
                 navManager.NavigateTo("/profile/");
             }
         }

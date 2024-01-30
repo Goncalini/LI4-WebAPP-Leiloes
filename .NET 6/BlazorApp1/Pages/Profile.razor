@@ -125,13 +125,13 @@
 }
 
 @code {
-	List<Leilao> leiloes = new List<Leilao>();
-	Utilizador user = new Utilizador();
-	const string noteKey = "note";
+    List<Leilao> leiloes = new List<Leilao>();
+    string user;
+    const string noteKey = "note";
 
 	protected override async Task OnInitializedAsync(){
     	leiloes = leilaoService.GetAll();
-    	user = await localStorage.GetItemAsync<Utilizador>(noteKey);
+    	user = await localStorage.GetItemAsync<string>(noteKey);
 	}
 }
 
