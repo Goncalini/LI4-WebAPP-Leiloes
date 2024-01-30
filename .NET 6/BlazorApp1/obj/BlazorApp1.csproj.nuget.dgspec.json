@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj": {}
+    "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj": {
+    "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj",
-        "packagesPath": "C:\\Users\\zeedu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\",
+        "projectPath": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\BlazorApp1.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zeedu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj"
+              "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -66,24 +70,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -96,17 +82,21 @@
         }
       }
     },
-    "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\zeedu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zeedu\\OneDrive\\Ambiente de Trabalho\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
+        "projectPath": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zeedu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -174,20 +164,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -24,9 +24,9 @@ namespace DataLayer.Services
                 int id = licitacao.LicitaçãoID;
                 Licitacao licit = FindById(id);
                 if (licit == null)
-                    context.Licitação.Add(licitacao);
+                    context.Licitacao.Add(licitacao);
                 else
-                    context.Licitação.Update(licitacao);
+                    context.Licitacao.Update(licitacao);
                 context.SaveChanges();
             }
         }
@@ -35,9 +35,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var leilao = _context.Licitação.Find(id);
+                var leilao = _context.Licitacao.Find(id);
 
-                _context.Licitação.Remove(leilao);
+                _context.Licitacao.Remove(leilao);
                 _context.SaveChanges();
             }
 
@@ -46,13 +46,28 @@ namespace DataLayer.Services
         public Licitacao FindById(int id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.Licitação.SingleOrDefault(x => x.LicitaçãoID == id);
+                return _context.Licitacao.SingleOrDefault(x => x.LicitaçãoID == id);
         }
 
         public List<Licitacao> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.Licitação.ToList();
+                return _context.Licitacao.ToList();
         }
+
+        public double GetLicitacaoRecente(int id)
+        {
+            using (var _context = _dbContextFactory.CreateDbContext())
+            {
+                List<Licitacao> lista = _context.Licitacao.ToList();
+                List<Licitacao> licitacoesLeilao = new List<Licitacao>(lista.FindAll(x => x.iDLeilao == id));
+                Licitacao first = licitacoesLeilao.OrderBy(x => x.tempo).FirstOrDefault();
+                if(first != null) {
+                    return first.valor;
+                }
+                return 0;
+            }
+        }
+
     }
 }

@@ -9,7 +9,7 @@
 @inject CategoriaService categoriaService;
 @inject CarregamentoService carregamentoService;
 @inject FotoService fotoService;
-@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject Blazored.LocalStorage.ILocalStorageService localStorage;
 
 <div class="min-h-screen bg-gray-200 w-full flex-col">
 
@@ -28,8 +28,8 @@
             <!--trocar para ir buscar estas infos-->
             <div class="my-10 justify-start">
         	    <p class="mt-8 text-5xl font-extralight">@user.nome</p>
-        	    <p class="text-2xl font-extralight">avaliacao</p>
-        	    <p class="text-2xl font-thin">@user.Username</p>
+        	    <p class="text-2xl font-extralight">@avaliacao</p>
+        	    <p class="text-2xl font-thin">@user.email</p>
             </div>
 
         </div>
@@ -60,25 +60,26 @@
         <div class="space-y-10 mx-14 my-10 flex flex-wrap justify-center">
 
             <!--formato de um leilao apenas!!! ALTERAR DPS meter aqui um for each-->
+            @foreach(var lei in leiloes){
             <div class=" bg-white h-54 w-10/12  relative bg-white rounded-[30px] shadow border">
 
                 <img class="my-1 w-17 h-56" src="assets/images/BELO.png" />
 
-                <p class="text-3xl left-[220px] top-[27px] absolute text-center font-bold font">Funko Pop! - Super Rare</p>
-                <p class="text-3xl left-[220px] top-[65px] absolute text-center font-thin ">Vinyl Figure</p>
-                <p class="text-3xl left-[220px] top-[135px] absolute text-center font-bold ">Condition: <span class="font-medium">Very Good</span> </p>
-                <p class="text-2xl left-[220px] top-[175px] absolute text-center font-extralight text-gray-500">Ze_Manel2004</p>
+                <p class="text-3xl left-[220px] top-[27px] absolute text-center font-bold font">@lei.nome</p>
+                <p class="text-3xl left-[220px] top-[65px] absolute text-center font-thin ">@categoriaService.nomeCategoria(lei.idCategoria)</p>
+                <p class="text-3xl left-[220px] top-[135px] absolute text-center font-bold ">Condition: <span class="font-medium">@lei.estado</span> </p>
+                <p class="text-2xl left-[220px] top-[175px] absolute text-center font-extralight text-gray-500">@lei.vendedorId</p>
 
-                <div class="text-2xl w-[344px] left-[710px] top-[27px] absolute text-center text-black font-bold  ">Initial price: 20000€</div>
-                <p class="text-2xl w-72 left-[757px] top-[65px] absolute text-center text-black font-bold">Last Bid: 25000€</p>
-                <div class="text-2xl w-[323px] left-[728px] top-[170px] absolute text-center text-black font-bold">Ending in: 2:28:15</div>
+                <div class="text-2xl w-[344px] left-[710px] top-[27px] absolute text-center text-black font-bold  ">Initial price: @lei.preco_inicial €</div>
+                <p class="text-2xl w-72 left-[757px] top-[65px] absolute text-center text-black font-bold">Last Bid: @licitService.GetLicitacaoRecente(lei.LeilãoID)€</p>
 
             </div>
-
+            }
 
             <div class="my-3">
                 <h2 class="text-xl font-medium">No more live auctions from this user...</h2>
             </div>
+            
         </div>
 
 
@@ -125,14 +126,19 @@
 }
 
 @code {
-    List<Leilao> leiloes = new List<Leilao>();
-    string user;
-    const string noteKey = "note";
+	List<Leilao> leiloes = new List<Leilao>();
+    Utilizador user = new Utilizador();
+	const string noteKey = "note";
+    private float avaliacao {get; set;}
+    private string categoria {get; set;}
+    string username;
 
 	protected override async Task OnInitializedAsync(){
-    	leiloes = leilaoService.GetAll();
-    	user = await localStorage.GetItemAsync<string>(noteKey);
-	}
+    	username = await localStorage.GetItemAsync<string>("note");
+        user = userService.FindById(username);
+        avaliacao = classService.GetMediaUser(user.Username);
+        leiloes = leilaoService.GetAllUser(user.Username);
+    }
 }
 
 

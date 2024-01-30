@@ -25,9 +25,9 @@ namespace DataLayer.Services
                 int id = leilao.LeilãoID;
                 Leilao lei = FindById(id);
                 if (lei == null)
-                    context.Leilão.Add(leilao);
+                    context.Leilao.Add(leilao);
                 else
-                    context.Leilão.Update(leilao);
+                    context.Leilao.Update(leilao);
                 context.SaveChanges();
             }
         }
@@ -36,9 +36,9 @@ namespace DataLayer.Services
         {
             using (var _context = _dbContextFactory.CreateDbContext())
             {
-                var leilao = _context.Leilão.Find(id);
+                var leilao = _context.Leilao.Find(id);
 
-                _context.Leilão.Remove(leilao);
+                _context.Leilao.Remove(leilao);
                 _context.SaveChanges();
             }
 
@@ -47,20 +47,27 @@ namespace DataLayer.Services
         public Leilao FindById(int id)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.Leilão.SingleOrDefault(x => x.LeilãoID == id);
+                return _context.Leilao.SingleOrDefault(x => x.LeilãoID == id);
         }
 
         public List<Leilao> GetAll()
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.Leilão.ToList();
+                return _context.Leilao.ToList();
         }
 
         public List<Leilao> GetAllCategoria(string nome)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.Leilão.ToList().FindAll(x=>x.categoria_produto.nome == nome);
+                return _context.Leilao.ToList().FindAll(x=>x.categoria_produto.nome == nome);
         }
+
+        public List<Leilao> GetAllUser(string nome)
+        {
+            using (var _context = _dbContextFactory.CreateDbContext())
+                return _context.Leilao.ToList().FindAll(x => x.vendedorId == nome);
+        }
+
     }
 
 

@@ -1,16 +1,28 @@
 ﻿@page "/create"
 @layout MainLayoutWnavbar
+@using DataLayer.Services
+@using DataLayer.Models
+@using Blazored.LocalStorage
+@inject UtilizadorService userService;
+@inject LicitacaoService licitService;
+@inject LeilaoService leilaoService;
+@inject ClassificacaoService classService;
+@inject CategoriaService categoriaService;
+@inject CarregamentoService carregamentoService;
+@inject FotoService fotoService;
 
 <div class="min-h-screen bg-gray-200 flex flex-wrap justify-center w-full">
 
     <!--falta meter a cena de carregar ficheiros e ficar com eles la! aka funcional-->
-    <div class="mt-8 mb-4 flex flex-col items-center justify-center bg-red-200 rounded-2xl border-1 border-zinc-300 h-64 w-7/12 cursor-pointer">
+    <label for="carrega-ficheiros" class="mt-8 mb-4 flex flex-col items-center justify-center bg-red-200 rounded-2xl border-1 border-zinc-300 h-64 w-7/12 cursor-pointer">
         <p class="font-bold text-2xl text-black/40">
             + Load Photos
         </p>
         <p class="font-smedium text-sm text-black/40">PNG or JPG</p>
-        <input id="carrega-ficheiros" type="file" class="hidden">
-    </div>
+
+        <InputFile id="carrega-ficheiros" class="hidden" OnChange="HandleFileSelected" />
+    </label>
+
 
 
     <div class="my-4 bg-white rounded-2xl h-80 w-7/12 grid grid-cols-2 grid-rows-4">
@@ -82,4 +94,35 @@
 
 @code {
 
+private IBrowserFile? selectedFile;
+private Leilao leilao = new Leilao();
+
+    private void HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        selectedFile = e.File;
+    }
+    
+    public async Task criaFoto(){
+        
+        string NomeFoto = "leilao" + leilao.LeilãoID + ".jpg";
+
+        if (selectedFile != null){
+            // Read the file content into a byte array
+            using (var stream = selectedFile.OpenReadStream())
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    await stream.CopyToAsync(memoryStream);
+                    byte[] fileBytes = memoryStream.ToArray();
+
+                    // Save the file to wwwroot directory
+                    string wwwrootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+                    string filePath = Path.Combine(wwwrootPath, NomeFoto);
+                    File.WriteAllBytes(filePath, fileBytes);
+                }
+            }
+        }
+
+    }
+    
 }

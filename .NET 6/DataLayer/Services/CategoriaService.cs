@@ -49,5 +49,14 @@ namespace DataLayer.Services
             using (var _context = _dbContextFactory.CreateDbContext())
                 return _context.Categoria.ToList();
         }
-     }
+
+        public string nomeCategoria(int id)
+        {
+            using (var _context = _dbContextFactory.CreateDbContext())
+            {
+                Categoria cat = _context.Categoria.SingleOrDefault(x => x.ID == id);
+                return cat.nome;
+            }
+        }
+    }
 }

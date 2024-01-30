@@ -1,75 +1,75 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
       "PackagePath": "staticwebassets\\BlazorApp1.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\BELO.png",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\BELO.png",
       "PackagePath": "staticwebassets\\assets\\images\\BELO.png"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\logo.png",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\logo.png",
       "PackagePath": "staticwebassets\\assets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\user3.svg",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\user3.svg",
       "PackagePath": "staticwebassets\\assets\\images\\user3.svg"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\Login.css",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\pedro\\LI4\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
