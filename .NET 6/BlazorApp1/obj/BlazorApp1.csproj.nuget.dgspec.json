@@ -52,11 +52,19 @@
               "target": "Package",
               "version": "[4.4.0, )"
             },
+            "BracketShow.BlazorNavigationManagerExtensions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.26, )"
+            },
+            "NavigationManagerUtils": {
+              "target": "Package",
+              "version": "[0.0.1, )"
             }
           },
           "imports": [

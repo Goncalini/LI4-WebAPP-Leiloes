@@ -59,13 +59,22 @@ namespace DataLayer.Services
         public List<Leilao> GetAllCategoria(string nome)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
-                return _context.Leilao.ToList().FindAll(x=>x.categoria_produto.nome == nome);
+            {
+                Categoria bla = _context.Categoria.SingleOrDefault(x => x.nome == nome);
+                return _context.Leilao.ToList().FindAll(x => x.idCategoria == bla.ID);
+            }
         }
 
         public List<Leilao> GetAllUser(string nome)
         {
             using (var _context = _dbContextFactory.CreateDbContext())
                 return _context.Leilao.ToList().FindAll(x => x.vendedorId == nome);
+        }
+
+        public int GetLength()
+        {
+            using (var _context = _dbContextFactory.CreateDbContext())
+                return _context.Carregamentos.ToList().Count() + 1;
         }
 
     }

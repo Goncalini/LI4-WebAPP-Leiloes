@@ -12,14 +12,17 @@
 
   <ItemGroup>
     <PackageReference Include="Blazored.LocalStorage" Version="4.4.0" />
+    <PackageReference Include="BracketShow.BlazorNavigationManagerExtensions" Version="1.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.26">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="NavigationManagerUtils" Version="0.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

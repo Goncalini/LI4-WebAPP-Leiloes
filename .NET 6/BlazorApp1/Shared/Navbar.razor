@@ -1,23 +1,47 @@
-﻿<div class="flex w-full bg-red-500 justify-between">
+﻿@using DataLayer.Services
+@using DataLayer.Models
+@using Blazored.LocalStorage
+@inject NavigationManager navManager;
+@inject Blazored.LocalStorage.ILocalStorageService localStorage;
+@inject UtilizadorService userService
+@inject CategoriaService catService
+
+<div class="flex w-full bg-red-500 justify-between">
     <div class="flex">
         <a href="/search">
             <img class="p-0 ml-3 w-15 h-16 my-2" src="assets/images/logo.png" />
         </a>
 
-        <select id="filtro"
+        <select id="filtro" @bind=option
                 class="py-1 ml-4 px-1 my-3 rounded-l-xl border-3 bg-gray-200 border-r-gray-200 shrink w-20">
             <option value="" selected>All</option>
-            <option value="1">Action/Vinyl Figures</option>
-            <option value="2">Comic</option>
-            <option value="3">Movies and Series</option>
-            <option value="4">Board Games</option>
-            <option value="5">Video Games</option>
+            @foreach(var categoria in categorias)
+            {
+                <option value=@categoria.nome>@categoria.nome</option>
+            }
         </select>
         <input @bind="@searchTerm" placeholder="Search product" type="text" class="py-1 px-2 my-3 rounded-r-xl" />
+        <a href="/search">
+            <img class="p-0 w-6 h-6 my-7 ml-2" src="assets/images/lupa.png" />
+        </a>
     </div>
 
-
-    <div class="flex space-x-6 py-4 h-full pr-4 justify-center align-center">
+    <div class="relative flex space-x-12 py-4 h-full pr-3 justify-center align-center">
+        <div class="absolute bottom-6 left-20 ml-12">
+            <a href="/news"
+               <img class="p-0 w-6 h-5 my-1 ml-1" src="assets/images/sinoo.png" />
+            </a>
+        </div>
+        <div class="absolute bottom-6 right-25">
+            <a href="/profile"
+                <img class="p-0 w-6 h-5 my-1 ml-4" src="assets/images/userb.svg" />
+            </a>
+        </div>
+        <div class="absolute bottom-6 right-16">
+            <a href="/"
+            <img class="p-0 w-6 h-5 my-1 mr-2" src="assets/images/signoutic.png" />
+            </a>
+        </div>
         @foreach (KeyValuePair<string, string> link in navLinks)
         {
             <a class="text-white" href="@link.Value">@link.Key</a>
@@ -26,7 +50,8 @@
 </div>
 
 @code {
-    private string searchTerm;
+    private string searchTerm = "";
+    private string option;
     private Dictionary<string, string> navLinks = new Dictionary<string, string>()
     {
         { "Sell Now", "/create" },
@@ -34,4 +59,22 @@
         { "Profile", "/profile" },
         { "Sign out", "/signout" },
     };
+
+    string username;
+    List<Categoria> categorias = new List<Categoria>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("nav");
+        username = await localStorage.GetItemAsync<string>("note");
+        categorias = catService.GetAll();
+    }
+/*
+    public async Task search()
+    {
+        await localStorage.SetItemAsync<string>("categoria", option);
+        //await localStorage.SetItemAsync<string>("search", searchTerm);
+        //navManager.NavigateTo("/search/");
+    }
+*/
 }

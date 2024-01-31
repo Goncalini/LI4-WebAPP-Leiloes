@@ -54,6 +54,13 @@ namespace DataLayer.Services
             using (var _context = _dbContextFactory.CreateDbContext())
                 return _context.Carregamentos.ToList().FindAll(x => x.Username == username);
         }
+
+        public int GetLength()
+        {
+            using (var _context = _dbContextFactory.CreateDbContext())
+                return _context.Carregamentos.ToList().Count()+1;
+        }
+
     }
 }
 

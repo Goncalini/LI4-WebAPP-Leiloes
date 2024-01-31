@@ -13,8 +13,24 @@
       "PackagePath": "staticwebassets\\assets\\images\\logo.png"
     },
     {
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\lupa.png",
+      "PackagePath": "staticwebassets\\assets\\images\\lupa.png"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\signoutic.png",
+      "PackagePath": "staticwebassets\\assets\\images\\signoutic.png"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\sinoo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\sinoo.png"
+    },
+    {
       "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\user3.svg",
       "PackagePath": "staticwebassets\\assets\\images\\user3.svg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\assets\\images\\userb.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\userb.svg"
     },
     {
       "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\css\\Login.css",
@@ -71,6 +87,10 @@
     {
       "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\LI4 TESTE\\WebAPP-Leiloes-Li4\\.NET 6\\BlazorApp1\\wwwroot\\images\\leilao4.jpg",
+      "PackagePath": "staticwebassets\\images\\leilao4.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props",

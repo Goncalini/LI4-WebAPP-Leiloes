@@ -74,10 +74,10 @@
 
     public void cancelInfo()
     {
-        navManager.NavigateTo("/profile/");
+        navManager.NavigateTo("/profile");
     }
 
-    public void updateInfo()
+    public async Task updateInfo()
     {
         var usera = userService.FindById(user);
         usera.nome = nome;
@@ -85,7 +85,7 @@
         usera.morada = address;
         usera.password = password;
         userService.AddUpdate(usera);
-        navManager.NavigateTo("/profile/");
+        navManager.NavigateTo("/profile", forceLoad:true);
     }
 
 

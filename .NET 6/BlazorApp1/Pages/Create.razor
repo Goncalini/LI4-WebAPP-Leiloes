@@ -10,6 +10,7 @@
 @inject CategoriaService categoriaService;
 @inject CarregamentoService carregamentoService;
 @inject FotoService fotoService;
+@inject Blazored.LocalStorage.ILocalStorageService localStorage;
 
 <div class="min-h-screen bg-gray-200 flex flex-wrap justify-center w-full">
 
@@ -27,27 +28,27 @@
 
     <div class="my-4 bg-white rounded-2xl h-80 w-7/12 grid grid-cols-2 grid-rows-4">
 
-        <input type="text" id="titulo" placeholder="Title"
+        <input type="text" id="titulo" @bind="@nome" placeholder="Title"
                class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
 
-        <select id="estado"
+        <select id="estado" @bind="@estado"
                 class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl dark:text-zinc-500" required>
             <option value="" disabled selected>Select Condition</option>
-            <option value="1">Very Good</option>
-            <option value="2">Good</option>
-            <option value="3">OK</option>
-            <option value="4">Bad</option>
-            <option value="2">Very Bad</option>
+            <option value="Very Good">Very Good</option>
+            <option value="Good">Good</option>
+            <option value="OK">OK</option>
+            <option value="Bad">Bad</option>
+            <option value="Very Bad">Very Bad</option>
         </select>
 
 
-        <input type="number" id="preco_inicial" placeholder="Initial Price (€)" min="10"
+        <input type="number" id="preco_inicial" @bind="@preco_inicial" placeholder="Initial Price (€)" min="10"
                class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
 
-        <input type="text" id="marca" placeholder="Brand"
+        <input type="text" id="marca" @bind="@marca" placeholder="Brand"
                class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
 
-        <select id="categoria"
+        <select id="categoria" @bind="@categoria"
                 class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl dark:text-zinc-500" required>
             <option value="" disabled selected>Category</option>
             <option value="1">Action/Vinyl Figures</option>
@@ -58,21 +59,21 @@
         </select>
 
 
-        <select id="tipo_leilao"
+        <select id="tipo_leilao" @bind="@tipo"
                 class="ml-10 mr-16 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl dark:text-zinc-500" required>
             <option value="" disabled selected>Select Auction Type</option>
-            <option value="1">Inglês</option>
-            <option value="2">Holândes</option>
+            <option value="Ingles">Inglês</option>
+            <option value="Holandes">Holândes</option>
         </select>
 
-        <input type="time" id="tempo_limite"
+        <input type="time" id="tempo_limite" @bind="@dataDeTermino"
                class="ml-16 mr-10 my-3 px-3 text-zinc-800 text-lg font-extralight shadow border border-black/25 rounded-2xl block dark:text-black" required>
     </div>
 
 
     <div class="my-4 flex items-center justify-center bg-white rounded-2xl h-52 w-7/12">
 
-        <textarea id="message" rows="6" placeholder="Write a description of the product you are going to auction here..."
+        <textarea id="message" @bind="@descricao" rows="6" placeholder="Write a description of the product you are going to auction here..."
                   class="block p-3 w-full h-full text-xl text-zinc-800 bg-white rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-black dark:placeholder-gray-400 dark:text-black"></textarea>
     </div>
 
@@ -83,19 +84,30 @@
             Cancel
         </button>
 
-        <button type="submit" class="bg-red-500 rounded-2xl shadow px-10 py-3 text-white text-center text-lg font-bold justify-items-end items-center hover:bg-red-400">
+        <button type="submit" @onclick="criaFoto" class="bg-red-500 rounded-2xl shadow px-10 py-3 text-white text-center text-lg font-bold justify-items-end items-center hover:bg-red-400">
             Confirm
         </button>
     </div>
 
-</div>
+    <p> @bla | @leilao.marca | @leilao.idCategoria | @leilao.tipo | @leilao.dataDeTermino | @leilao.descricao | @foto.IDLeilão | @foto.FotoPath</p>
 
+</div>
 
 
 @code {
 
 private IBrowserFile? selectedFile;
 private Leilao leilao = new Leilao();
+private Foto foto = new Foto();
+private string nome;
+private string estado;
+private double preco_inicial;
+private string marca;
+private int categoria;
+private string tipo;
+private DateTime dataDeTermino;
+private string descricao;
+private string bla;
 
     private void HandleFileSelected(InputFileChangeEventArgs e)
     {
@@ -103,7 +115,18 @@ private Leilao leilao = new Leilao();
     }
     
     public async Task criaFoto(){
-        
+    
+        leilao.nome = nome;
+        leilao.estado = estado;
+        leilao.preco_inicial = preco_inicial;
+        leilao.marca = marca;
+        leilao.idCategoria = categoria;
+        leilao.tipo = tipo;
+        leilao.dataDeTermino = dataDeTermino;
+        leilao.descricao = descricao;
+        leilao.vendedorId = await localStorage.GetItemAsync<string>("note");
+        leilao.LeilãoID = leilaoService.GetLength();
+
         string NomeFoto = "leilao" + leilao.LeilãoID + ".jpg";
 
         if (selectedFile != null){
@@ -114,15 +137,20 @@ private Leilao leilao = new Leilao();
                 {
                     await stream.CopyToAsync(memoryStream);
                     byte[] fileBytes = memoryStream.ToArray();
-
+                    
                     // Save the file to wwwroot directory
-                    string wwwrootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+                    string wwwrootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    bla = wwwrootPath;
                     string filePath = Path.Combine(wwwrootPath, NomeFoto);
                     File.WriteAllBytes(filePath, fileBytes);
+                    leilaoService.AddLeilao(leilao);
+                    foto.FotoPath = filePath;
+                    foto.IDLeilão = leilao.LeilãoID;
+                    fotoService.AddFoto(foto);
                 }
             }
         }
 
     }
-    
+
 }

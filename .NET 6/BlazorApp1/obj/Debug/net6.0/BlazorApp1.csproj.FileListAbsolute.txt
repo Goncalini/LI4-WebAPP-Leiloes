@@ -492,3 +492,13 @@ C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\Blazo
 C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\refint\BlazorApp1.dll
 C:\Users\zeedu\OneDrive\Ambiente de Trabalho\LI4\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\obj\Debug\net6.0\BlazorApp1.pdb
 C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Blazored.LocalStorage.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\BlazorNavigationManagerExtensions.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\NavigationManagerUtils.dll
+C:\Users\pedro\LI4 TESTE\WebAPP-Leiloes-Li4\.NET 6\BlazorApp1\bin\Debug\net6.0\System.IO.Pipelines.dll

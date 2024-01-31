@@ -36,6 +36,7 @@
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if(firstRender){
+            Console.WriteLine("b");
             usernome = await localStorage.GetItemAsync<string>("note");
             StateHasChanged();
         }

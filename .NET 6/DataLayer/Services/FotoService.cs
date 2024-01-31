@@ -55,5 +55,6 @@ namespace DataLayer.Services
             using (var _context = _dbContextFactory.CreateDbContext())
                 return _context.FotoDoProduto.ToList().FindAll( x => x.IDLeilão == id);
         }
+
     }
 }

@@ -1,23 +1,33 @@
 ﻿@page "/search"
 @layout MainLayoutWnavbar
+@using DataLayer.Services
+@using DataLayer.Models
+@using Blazored.LocalStorage
+@inject NavigationManager navManager;
+@inject Blazored.LocalStorage.ILocalStorageService localStorage;
+@inject LeilaoService leilaoService;
+@inject CategoriaService categoriaService;
+@inject LicitacaoService licitService;
 
-<div class="min-h-screen bg-gray-200 flex justify-center">
+<div class="min-h-screen bg-gray-200 flex justify-center" @on>
 
     <div class="space-y-10 m-9">
-        <div class="bg-white h-[250px] w-[1050px]  relative bg-white rounded-[30px] shadow border">
-        
-            <img class="my-1 ml-[-25px] w-17 h-56" src="assets/images/BELO.png" />
-            <p class="text-4xl left-[190px] top-[27px] absolute text-center font-bold font">Funko Pop! - Super Rare</p>
-            <p class="text-3xl left-[192px] top-[195px] absolute text-center text-[32px] font-extralight text-gray-500">Ze_Manel2004</p>
-            <div class="text-3xl w-[344px] left-[710px] top-[27px] absolute text-center text-black text-[32px] font-bold  ">Initial price: 20000€</div>
-            <p class="text-4xl left-[190px] top-[73px] absolute text-center font-thin ">Vinyl Figure</p>
-            <div class="text-3xl w-[323px] left-[728px] top-[185px] absolute text-center text-black text-[32px] font-bold">Ending in: 2:28:15</div>
-            <p class="text-3xl w-72 left-[757px] top-[73px] absolute text-center text-black text-[32px] font-bold">Last Bid: 25000€</p>
-            <p class="text-4xl left-[190px] top-[135px] absolute text-center font-bold ">Condition: <span class="font-medium">Very Good</span> </p>
+        @foreach (var leilao in leiloes)
+        {
+            <div class="bg-white h-[250px] w-[1050px]  relative bg-white rounded-[30px] shadow border">
+       
+                <img class="my-1 ml-[-25px] w-17 h-56" src="assets/images/BELO.png" />
+                <p class="text-4xl left-[190px] top-[27px] absolute text-center font-bold font">@leilao.nome</p>
+                <p class="text-3xl left-[192px] top-[195px] absolute text-center text-[32px] font-extralight text-gray-500">@leilao.vendedorId</p>
+                <div class="text-3xl w-[344px] left-[710px] top-[27px] absolute text-center text-black text-[32px] font-bold  ">Initial price: @leilao.preco_inicial €</div>
+                <p class="text-4xl left-[190px] top-[73px] absolute text-center font-thin ">@categoriaService.FindById(leilao.idCategoria).nome</p>
+                <div class="text-3xl w-[323px] left-[728px] top-[185px] absolute text-center text-black text-[32px] font-bold">Ending in: 2:28:15</div> 
+                <p class="text-3xl w-72 left-[757px] top-[73px] absolute text-center text-black text-[32px] font-bold">Last Bid: @licitService.GetLicitacaoRecente(leilao.LeilãoID) €</p> 
+                <p class="text-4xl left-[190px] top-[135px] absolute text-center font-bold ">Condition: <span class="font-medium">@leilao.estado</span> </p>*/
+            
+            </div>
+        }
 
-        
-        </div>
-      
         <div class="bg-white h-[250px] w-[1050px]">
         </div>
         <div class="bg-white h-[250px] w-[1050px]">
@@ -29,5 +39,35 @@
 </div>
 
 @code {
+    List<Leilao> leiloes = new List<Leilao>();
+    List<Leilao> leiloesfiltered = new List<Leilao>();
+    public string option;
+    private string searchTerm;
 
+    protected override async Task OnInitializedAsync()
+    {
+            
+            option = await localStorage.GetItemAsync<string>("note");
+            //searchTerm = await localStorage.GetItemAsync<string>("search");
+/*
+            if(option  != null)
+            {
+                List<Categoria> categorias = categoriaService.GetAll();
+                foreach (var categoria in categorias)
+                {
+                    if (categoria.nome == option)
+                    {
+                        leiloes = leilaoService.GetAllCategoria(option);
+                        //leiloesfiltered = leiloes.ToList().FindAll(x => x.nome.Contains(searchTerm));
+                    }
+                }
+            }
+            else
+*/              
+                leiloes = leilaoService.GetAll();
+                //leiloesfiltered = leiloes.ToList().FindAll(x => x.nome.Contains(searchTerm));
+            
+            //StateHasChanged();
+        
+    }
 }
