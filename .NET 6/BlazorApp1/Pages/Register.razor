@@ -50,8 +50,6 @@
     public void HandleSubmit(EditContext editContext)
 	{
         var newCliente = (Utilizador)editContext.Model;
-		if(password == user.password)
-            //Error Handling
         userService.AddUpdate(newCliente);
 	}
 

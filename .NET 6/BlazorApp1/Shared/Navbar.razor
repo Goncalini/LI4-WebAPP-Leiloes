@@ -65,7 +65,6 @@
 
     protected override async Task OnInitializedAsync()
     {
-        Console.WriteLine("nav");
         username = await localStorage.GetItemAsync<string>("note");
         categorias = catService.GetAll();
     }

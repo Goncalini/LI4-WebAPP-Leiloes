@@ -89,7 +89,7 @@
         </button>
     </div>
 
-    <p> @bla | @leilao.marca | @leilao.idCategoria | @leilao.tipo | @leilao.dataDeTermino | @leilao.descricao | @foto.IDLeilão | @foto.FotoPath</p>
+    <p> @leilao.nome | @leilao.estado | @leilao.preco_inicial | @leilao.marca | @leilao.idCategoria | @leilao.tipo | @leilao.dataDeTermino | @leilao.descricao | @leilao.vendedorId | @leilao.LeilãoID</p>
 
 </div>
 
@@ -107,50 +107,46 @@ private int categoria;
 private string tipo;
 private DateTime dataDeTermino;
 private string descricao;
-private string bla;
 
     private void HandleFileSelected(InputFileChangeEventArgs e)
     {
         selectedFile = e.File;
     }
     
-    public async Task criaFoto(){
+    public void criaFoto(){
     
         leilao.nome = nome;
         leilao.estado = estado;
         leilao.preco_inicial = preco_inicial;
         leilao.marca = marca;
-        leilao.idCategoria = categoria;
+        leilao.idCategoria = 1;
         leilao.tipo = tipo;
         leilao.dataDeTermino = dataDeTermino;
         leilao.descricao = descricao;
-        leilao.vendedorId = await localStorage.GetItemAsync<string>("note");
         leilao.LeilãoID = leilaoService.GetLength();
 
         string NomeFoto = "leilao" + leilao.LeilãoID + ".jpg";
 
-        if (selectedFile != null){
+        //if (selectedFile != null){
             // Read the file content into a byte array
-            using (var stream = selectedFile.OpenReadStream())
-            {
+            
                 using (var memoryStream = new MemoryStream())
                 {
-                    await stream.CopyToAsync(memoryStream);
-                    byte[] fileBytes = memoryStream.ToArray();
                     
                     // Save the file to wwwroot directory
-                    string wwwrootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
-                    bla = wwwrootPath;
-                    string filePath = Path.Combine(wwwrootPath, NomeFoto);
-                    File.WriteAllBytes(filePath, fileBytes);
                     leilaoService.AddLeilao(leilao);
-                    foto.FotoPath = filePath;
-                    foto.IDLeilão = leilao.LeilãoID;
-                    fotoService.AddFoto(foto);
+                    //foto.FotoPath = filePath;
+                    //foto.IDLeilão = leilao.LeilãoID;
+                    //fotoService.AddFoto(foto);
                 }
-            }
-        }
+            
+        
 
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        leilao.vendedorId = await localStorage.GetItemAsync<string>("note");
     }
 
 }

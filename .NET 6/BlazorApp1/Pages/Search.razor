@@ -14,6 +14,7 @@
     <div class="space-y-10 m-9">
         @foreach (var leilao in leiloes)
         {
+           /* <p> @leilao.nome | @leilao.estado | @leilao.preco_inicial | @leilao.marca | @leilao.idCategoria | @leilao.tipo | @leilao.dataDeTermino | @leilao.descricao | @leilao.vendedorId | @leilao.LeilãoID</p>
             <div class="bg-white h-[250px] w-[1050px]  relative bg-white rounded-[30px] shadow border">
        
                 <img class="my-1 ml-[-25px] w-17 h-56" src="assets/images/BELO.png" />
@@ -24,8 +25,9 @@
                 <div class="text-3xl w-[323px] left-[728px] top-[185px] absolute text-center text-black text-[32px] font-bold">Ending in: 2:28:15</div> 
                 <p class="text-3xl w-72 left-[757px] top-[73px] absolute text-center text-black text-[32px] font-bold">Last Bid: @licitService.GetLicitacaoRecente(leilao.LeilãoID) €</p> 
                 <p class="text-4xl left-[190px] top-[135px] absolute text-center font-bold ">Condition: <span class="font-medium">@leilao.estado</span> </p>*/
-            
-            </div>
+          
+            //</div> 
+          
         }
 
         <div class="bg-white h-[250px] w-[1050px]">
@@ -38,10 +40,11 @@
     </div>
 </div>
 
+
 @code {
     List<Leilao> leiloes = new List<Leilao>();
-    List<Leilao> leiloesfiltered = new List<Leilao>();
-    public string option;
+    //List<Leilao> leiloesfiltered = new List<Leilao>();
+    string option;
     private string searchTerm;
 
     protected override async Task OnInitializedAsync()
@@ -64,7 +67,7 @@
             }
             else
 */              
-                leiloes = leilaoService.GetAll();
+            leiloes = leilaoService.GetAll();
                 //leiloesfiltered = leiloes.ToList().FindAll(x => x.nome.Contains(searchTerm));
             
             //StateHasChanged();
