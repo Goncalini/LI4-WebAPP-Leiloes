@@ -6,5 +6,3 @@ Grupo:
 - Marta Rodrigues
 - Rei Popes
 - José Oliveira
-
-Grade - 12/20 :(
